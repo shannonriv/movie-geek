@@ -1,3 +1,29 @@
-body {
+:root {
+  --main-geek: #815ddd;
+  --dark-geek: #1b1f3b;
+  --medium-geek: #454ade;
+  --gray-geek: 
+}
+
+* {
   font-family: 'Oxygen', sans-serif;
+}
+
+/* Log in */
+
+
+/* Helpers */
+.min100vh {
+  min-height: 100vh;
+}
+
+.btn-geek {
+  background: linear-gradient(to right, var(--medium-geek),var(--main-geek));
+  color: #ffff;
+  border: none;
+  box-shadow: 2px 2px 3px 2px rgba(57, 59, 70, 0.45);
+}
+
+.rounded-corners {
+  border-radius: 20px;
 }

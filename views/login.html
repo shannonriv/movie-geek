@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:300" rel="stylesheet">
+  <!-- Estilos del proyecto -->
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Inicia sesión</title>
+</head>
+
+<body>
+  <main class="min100vh">
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+          <form>
+            <div class="form-row mb-2">
+              <div class="form-group col-12 ">
+                <label for="email" class="sr-only"></label>
+                <input type="text" id="email" class="form-control rounded-corners" placeholder="Email">
+              </div>
+              <div class="form-group col-12">
+                <label for="password" class="sr-only"></label>
+                <input type="password" id="password" class="form-control rounded-corners" placeholder="Password">
+                <small id="login-help" class="form-text text-center mt-2 d-none">
+                  Correo y/o contraseña incorrectos. Inténtalo nuevamente.
+                </small>
+              </div>
+              <div class="form-group col-8 offset-2 col-md-6 offset-md-3">
+                <button id="email-login" class="btn btn-geek form-control rounded-corners">Log in</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Scripts del proyecto -->
+  <script src="../js/app.js"></script>
+</body>
+
+</html>

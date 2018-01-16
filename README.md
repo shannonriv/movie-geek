@@ -1,6 +1,6 @@
 # Hackhathon: Movie Geek
 
-## Recursos utilizados 
+## Recursos utilizados
 
 * jQuery
 * Bootstrap 4
