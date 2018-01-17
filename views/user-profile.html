@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/main.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
@@ -13,71 +14,95 @@
   <title>User history</title>
 </head>
 <body>
-  <!-- Encabezado desplegable -->
-  <header>
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header media-left">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-          <!-- <a class="navbar-brand" href="#"><img alt="Brand" src="assets\images\logoForma.png"></a> -->
-    <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse col-xs-12" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Indicación 1</a></li>
-              <li><a href="#">Indicación 2</a></li>
-              <li data-target="#exampleModal" data-toggle="modal"><a href="#">Cerrar sesión</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+    <!-- Encabezado desplegable -->
+    <header class="geek-bg container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light transparent">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Settings</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log out</button>
+          </form>
+        </div>
       </nav>
-    </header>
-
-    <!-- Sección donde aparecerá imagen de usuario y nombre -->
-    <section>
-      <figure class="">
-        <!-- <img src="../assets/images/geek-avatar-man.svg" alt="geek-avatar-man" class="img-fluid border border-secondary rounded-circle"> -->
-        <img src="../assets/images/geek-avatar-woman.svg" alt="geek-avatar-woman" class="img-fluid border border-secondary rounded-circle">
-        <figcaption id="user-name" class="text-center">Nombre del usario</figcaption>
-      </figure>
-    </section>
-
-    <!-- Sección de pestañas -->
-    <section>
-
-      <!-- Pestañas -->
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" id="watchlist-tab" data-toggle="tab" href="#watchlist" role="tab" aria-controls="watchlist" aria-selected="true">Películas a ver</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="false">Historial</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="recommendations-tab" data-toggle="tab" href="#recommendations" role="tab" aria-controls="recommendations" aria-selected="false">Recomendaciones</a>
-        </li>
-      </ul>
-
-      <!-- Contenido de pestañas -->
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="watchlist" role="tabpanel" aria-labelledby="watchlist-tab">
-          <p>Lista de películas que se quieren ver</p>
-        </div>
-        <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab">
-          <p>Lista de películas que ya se vieron</p>
-        </div>
-        <div class="tab-pane fade" id="recommendations" role="tabpanel" aria-labelledby="recommendations-tab">
-          <p>Lista de películas que se recomiendan ver</p>
+      <div class="row">
+        <div class="page-header col-12 geek-bg d-flex flex-column align-items-center justify-content-center">
+          <div class="row">
+            <figure class="col-6 offset-3 col-sm-4 offset-sm-4 my-0">
+              <img src="../assets/images/001-glasses.svg" alt="Geek glasses" class="img-fluid">
+            </figure>
+          </div>
         </div>
       </div>
 
-    </section>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <!-- Sección donde aparecerá imagen y nombre de usuario -->
+        <div class="col-xs-12 margin-top" id="user-profile-panel">
+          <figure class="mx-auto text-center col-xs-4 offset-xs-3">
+            <img src="../assets/images/user-avatar.svg" alt="user-avatar" class="img-fluid border border-secondary rounded-circle">
+            <figcaption id="user-name" class="text-center">User name</figcaption>
+          </figure>
+        </div>
+
+        <!-- Sección de pestañas -->
+        <div class="col-xs-12">
+
+          <!-- Pestañas -->
+          <ul class="nav nav-tabs margin-top" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="watchlist-tab" data-toggle="tab" href="#watchlist" role="tab" aria-controls="watchlist" aria-selected="true">Watchlist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="false">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="recommendations-tab" data-toggle="tab" href="#recommendations" role="tab" aria-controls="recommendations" aria-selected="false">Recomendations</a>
+            </li>
+          </ul>
+
+          <!-- Contenido de pestañas -->
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="watchlist" role="tabpanel" aria-labelledby="watchlist-tab" data-toggle="tooltip" data-placement="top" title="Películas por ver">
+              <!-- Caja envoltora de la información de la película -->
+              <div class="box-shadow d-flex p-2" id="movie-info-wrapper">
+                <figure>
+                  <img src="" alt="movie-poster" id="movie-poster">
+                </figure>
+                <div class="p-2">
+                  <h2 class="" id="movie-title">Title</h2>
+                  <p class="" id="movie-plot">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="d-flex p-2" id="icon-wrapper">
+                  <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                </div>
+
+              </div>
+            </div>
+            <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab" data-toggle="tooltip" data-placement="top" title="Películas vistas">
+              <p>Lista de películas que ya se vieron</p>
+            </div>
+            <div class="tab-pane fade" id="recommendations" role="tabpanel" aria-labelledby="recommendations-tab" data-toggle="tooltip" data-placement="top" title="Películas recomendadas">
+              <p>Lista de películas que se recomiendan ver</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
 
   <!-- Firebase -->
 
@@ -86,6 +111,6 @@
   <!-- Bootstrap -->
   <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
   <!-- Scripts del proyecto -->
-  <script src="../js/app.js"></script>
+  <script src="../js/user-profile.js"></script>
 </body>
 </html>
