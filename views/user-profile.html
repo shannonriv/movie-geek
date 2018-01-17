@@ -24,14 +24,14 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Búsqueda</a>
+              <a class="nav-link" href="#">Search</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Configuración</a>
+              <a class="nav-link" href="#">Settings</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerrar Sesión</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log out</button>
           </form>
         </div>
       </nav>
@@ -47,57 +47,62 @@
 
     </header>
 
-    <!-- Sección donde aparecerá imagen y nombre de usuario -->
-    <section class="container margin-top" id="user-profile-panel">
-      <figure class="col-4 mx-auto text-center">
-        <img src="../assets/images/user-avatar.svg" alt="user-avatar" class="img-fluid border border-secondary rounded-circle">
-        <figcaption id="user-name" class="text-center">Nombre del usario</figcaption>
-      </figure>
-    </section>
+    <div class="container">
+      <div class="row">
+        <!-- Sección donde aparecerá imagen y nombre de usuario -->
+        <div class="col-xs-12 margin-top" id="user-profile-panel">
+          <figure class="mx-auto text-center col-xs-4 offset-xs-3">
+            <img src="../assets/images/user-avatar.svg" alt="user-avatar" class="img-fluid border border-secondary rounded-circle">
+            <figcaption id="user-name" class="text-center">User name</figcaption>
+          </figure>
+        </div>
 
-    <!-- Sección de pestañas -->
-    <section>
+        <!-- Sección de pestañas -->
+        <div class="col-xs-12">
 
-      <!-- Pestañas -->
-      <ul class="nav nav-tabs margin-top" id="myTab" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" id="watchlist-tab" data-toggle="tab" href="#watchlist" role="tab" aria-controls="watchlist" aria-selected="true">Watchlist</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="false">Historial</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="recommendations-tab" data-toggle="tab" href="#recommendations" role="tab" aria-controls="recommendations" aria-selected="false">Recomendaciones</a>
-        </li>
-      </ul>
+          <!-- Pestañas -->
+          <ul class="nav nav-tabs margin-top" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="watchlist-tab" data-toggle="tab" href="#watchlist" role="tab" aria-controls="watchlist" aria-selected="true">Watchlist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="false">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="recommendations-tab" data-toggle="tab" href="#recommendations" role="tab" aria-controls="recommendations" aria-selected="false">Recomendations</a>
+            </li>
+          </ul>
 
-      <!-- Contenido de pestañas -->
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="watchlist" role="tabpanel" aria-labelledby="watchlist-tab" data-toggle="tooltip" data-placement="top" title="Películas por ver">
-          <!-- Caja envoltora de la información de la película -->
-          <div class="box-shadow d-flex p-2" id="movie-info-wrapper">
-            <figure>
-              <img src="" alt="movie-poster" id="movie-poster">
-            </figure>
-            <div class="p-2">
-              <h2 class="" id="movie-title">Título</h2>
-              <p class="" id="movie-plot">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <!-- Contenido de pestañas -->
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="watchlist" role="tabpanel" aria-labelledby="watchlist-tab" data-toggle="tooltip" data-placement="top" title="Películas por ver">
+              <!-- Caja envoltora de la información de la película -->
+              <div class="box-shadow d-flex p-2" id="movie-info-wrapper">
+                <figure>
+                  <img src="" alt="movie-poster" id="movie-poster">
+                </figure>
+                <div class="p-2">
+                  <h2 class="" id="movie-title">Title</h2>
+                  <p class="" id="movie-plot">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="d-flex p-2" id="icon-wrapper">
+                  <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                </div>
+
+              </div>
             </div>
-            <div class="d-flex p-2" id="icon-wrapper">
-              <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+            <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab" data-toggle="tooltip" data-placement="top" title="Películas vistas">
+              <p>Lista de películas que ya se vieron</p>
             </div>
-
+            <div class="tab-pane fade" id="recommendations" role="tabpanel" aria-labelledby="recommendations-tab" data-toggle="tooltip" data-placement="top" title="Películas recomendadas">
+              <p>Lista de películas que se recomiendan ver</p>
+            </div>
           </div>
-        </div>
-        <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab" data-toggle="tooltip" data-placement="top" title="Películas vistas">
-          <p>Lista de películas que ya se vieron</p>
-        </div>
-        <div class="tab-pane fade" id="recommendations" role="tabpanel" aria-labelledby="recommendations-tab" data-toggle="tooltip" data-placement="top" title="Películas recomendadas">
-          <p>Lista de películas que se recomiendan ver</p>
-        </div>
-      </div>
 
-    </section>
+        </div>
+
+      </div>
+    </div>
 
   <!-- Firebase -->
 
