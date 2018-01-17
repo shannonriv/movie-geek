@@ -13,16 +13,17 @@ $(document).ready(function() {
   // Variables
   var $loginGoogle = $('#google-login');
   var $loginFb = $('#fb-login');
-  var $loginEmail = $('#email-login');
+  var $loginEmail = $('#login-email');
   var $loginPassword = $('#login-password');
+  var $loginBtn = $('#login-btn');
 
   // Login con email
-  $loginEmail.click(function(event) {
+  $loginBtn.click(function(event) {
     event.preventDefault();
 
     var $email = $loginEmail.val();
     var $password = $loginPassword.val();
-
+   
     firebase.auth().signInWithEmailAndPassword($email, $password)
       .catch(function(error) {
         // Handle Errors here.
