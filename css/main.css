@@ -198,6 +198,16 @@ h6 {
 }
 
 /* User Profile */
+/* Carrusel */
+.car-img {
+  height: 85vh;
+}
+
+/* Perfil de usuario*/
+
+.margin-top {
+  margin-top: 2em;
+}
 
 .margin-top {
   margin-top: 1rem;
