@@ -1,3 +1,20 @@
-body {
+* {
   font-family: 'Oxygen', sans-serif;
+}
+
+.navbar {
+  background-color: white;
+  border:none;
+}
+
+p {
+  color: #222;
+}
+
+figure {
+  padding: 1em;
+}
+
+figcaption {
+  margin-top: 0.5em;
 }
