@@ -2,3 +2,68 @@
   font-family: 'Oxygen', sans-serif;
 }
 
+/* Movie Info */
+
+.banner-movie {
+  background-image: url('../assets/images/wwmovie.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  padding: 15px;
+}
+
+a.btn-back, a.btn-add {
+  background-color: #dcd9ebbe;  
+  border-radius: 50%;
+  color: black;  
+  padding: 3px 10px;
+}
+
+.btn-back i, .btn-add i {
+  font-size: .8rem;
+  font-weight: lighter;
+}
+
+.main-poster {
+  border: 1px solid #987ae4;
+  background-color: #e7deec;
+  border-radius: 10px;
+  height: 150px;
+}
+
+.title-movie {
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.duration-movie, .release-year-movie, .director-movie, .tag-movie {
+  font-size: .8rem;
+  margin-bottom: .3rem;
+  padding-bottom: 3px;
+}
+
+.tag-movie {
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  display: inline-block;
+  letter-spacing: 0.8px;
+  padding: 3px;
+  text-align: center;
+}
+
+.sinopsis-movie {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+h6 {
+  font-weight: 700;
+}
+
+.actor-movie {
+  border: 1px solid #987ae4;
+  background-color: #e7deec;
+  border-radius: 10px;  
+  height: 150px;
+}
