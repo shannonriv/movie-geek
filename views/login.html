@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <!-- Estilos del proyecto -->
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Inicia sesión</title>
+</head>
+
+<body>
+  <main>
+    <section class="container-fluid">
+      <div class="row">
+        <!-- Encabezado -->
+        <div class="page-header col-12 geek-bg d-flex flex-column align-items-center justify-content-center">
+          <div class="row">
+            <figure class="col-6 offset-3 col-sm-4 offset-sm-4 my-0">
+              <img src="../assets/images/001-glasses.svg" alt="Geek glasses" class="img-fluid">
+            </figure>
+          </div>
+        </div>
+        <!-- Contenido login -->
+        <div class="page-content col-10 offset-1 d-flex flex-column align-items-center justify-content-center">
+          <!-- Formulario de log in -->
+          <form class="max400">
+            <div class="form-row mb-2">
+              <div class="form-group col-12 ">
+                <label for="email" class="sr-only"></label>
+                <input type="text" id="email" class="form-control geek-input rounded-corners" placeholder="Email">
+              </div>
+              <div class="form-group col-12">
+                <label for="password" class="sr-only"></label>
+                <input type="password" id="login-password" class="form-control geek-input rounded-corners" placeholder="Password">
+                <small id="login-help" class="form-text text-center mt-2 d-none">
+                  Correo y/o contraseña incorrectos. Inténtalo nuevamente.
+                </small>
+              </div>
+              <div class="form-group col-8 offset-2 col-md-6 offset-md-3">
+                <button id="email-login" class="btn btn-geek form-control rounded-corners">Log in</button>
+              </div>
+            </div>
+            <!-- Inicio con redes sociales -->
+            <small class="d-block text-center my-3">O si prefieres...</small>
+            <div class="form-row">
+              <div class="form-group col-6">
+                <button type="button" id="fb-login" class="btn btn-primary icon-btn rounded-corners float-right">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="form-group col-6">
+                <button type="button" id="google-login" class="btn btn-danger icon-btn rounded-corners">
+                  <i class="fa fa-google" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+          <!-- Ir a la vista register -->
+          <p class="text-center">¿No estás registrado?
+            <a href="register.html">Crea una cuenta.</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Scripts del proyecto -->
+  <script src="../js/app.js"></script>
+</body>
+
+</html>
