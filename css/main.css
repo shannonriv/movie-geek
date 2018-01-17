@@ -67,3 +67,15 @@ h6 {
   border-radius: 10px;  
   height: 150px;
 }
+.navbar {
+  background-color: white;
+  border:none;
+}
+
+figure {
+  padding: 1em;
+}
+
+figcaption {
+  margin-top: 0.5em;
+}
