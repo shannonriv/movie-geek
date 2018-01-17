@@ -13,7 +13,7 @@ $(document).ready(function() {
   // Variables
   var $loginGoogle = $('#google-login');
   var $loginFb = $('#fb-login');
-  var $loginEmail = $('#login-email');
+  var $loginEmail = $('#email-login');
   var $loginPassword = $('#login-password');
 
   // Login con email
@@ -34,7 +34,8 @@ $(document).ready(function() {
 
     firebase.auth().onAuthStateChanged(user => {
       if (user) {
-        $(location).attr('href', 'home.html');
+        $('#login-help').addClass('d-none');        
+        $(location).attr('href', 'search.html');
       }
     });
   });
@@ -54,7 +55,8 @@ $(document).ready(function() {
         profilePhoto: user.photoURL
       }).then(
         user => {
-          $(location).attr('href', 'home.html');
+          console.log('Sesión con google');
+          $(location).attr('href', 'search.html');
         });
       // ...
     }).catch(function(error) {
@@ -79,9 +81,9 @@ $(document).ready(function() {
       var emailVerified = user.emailVerified;
       var uid = user.uid;
       // console.log(user);
-      $username.text(name);
-      $userEmail.text(email);
-      $profilePhoto.attr('src', photoUrl);
+      // $username.text(name);
+      // $userEmail.text(email);
+      // $profilePhoto.attr('src', photoUrl);
     } else {
       // No user is signed in.
     }

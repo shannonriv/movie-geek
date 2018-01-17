@@ -80,35 +80,41 @@ $(document).ready(function() {
 
   // Rgistro de usuario nuevo
   function register() {
-    var $email = $regEmail.val();
-    var $password = $regPassword.val();
+    var email = $regEmail.val();
+    var password = $regPassword.val();
 
     // Auth Firebase para crear usuario con email
-    firebase.auth().createUserWithEmailAndPassword($email, $password)
-      .then(function(user) {
-        var username = $regName.val() + ' ' + $regLastname.val();    
-        return user.updateProfile({
-          displayName: username,
-          photoURL: 'https://firebasestorage.googleapis.com/v0/b/codebook-cd8c9.appspot.com/o/postedImages%2Fdefault.jpg?alt=media&token=5897a927-f9b6-4ded-9331-0dc8032ae325'
-        });
-      })
-      .catch(function(error) {
-        // Handle Errors here.
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        // ...
-      });
+    // firebase.auth().createUserWithEmailAndPassword($email, $password)
+    //   .then(function(user) {
+    //     var username = $regName.val() + ' ' + $regLastname.val();    
+    //     return user.updateProfile({
+    //       displayName: username,
+    //       photoURL: 'https://firebasestorage.googleapis.com/v0/b/movie-geek-8b595.appspot.com/o/projectImages%2Favatar.svg?alt=media&token=6507d06b-3a28-476e-b077-64364643eb93'
+    //     });
+    //   })
+    //   .catch(function(error) {
+    //     // Handle Errors here.
+    //     var errorCode = error.code;
+    //     var errorMessage = error.message;
+    //     // ...
+    //   });
+    firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      // ...
+    });
 
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
-        firebase.database().ref('users/' + user.uid).set({
+        firebase.database().ref('users').child(user.uid).set({
           name: user.displayName,
           email: user.email,
           uid: user.uid,
           profilePhoto: user.photoURL
         }).then(user => {
           // Redireccionar a home
-          window.location.href = 'home.html';
+          window.location.href = 'search.html';
         }); 
         console.log('User is registered.');
       } else {
