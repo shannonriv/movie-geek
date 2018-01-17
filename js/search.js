@@ -1,43 +1,51 @@
 $(document).ready(function() {
+  // Declarando variables
   var inputFld = $('#titleFld');
   var searchBtn = $('#searchBtn');
-
+  var movieList = $('#movieList');
+  var arrResults = [];
+  
+  // Asociando eventos
   searchBtn.click(handleSearchBtn);
+
+  // Función para hacer la busqueda general
   function handleSearchBtn() {
     var title = inputFld.val();
     console.log(title);
-    var url = 'http://www.omdbapi.com/?&apikey=5bb8748d&s=' + title + '&type=movie';
+    var url = 'http://www.omdbapi.com/?&apikey=5bb8748d&s=' + encodeURI(title) + '&type=movie';
     $.ajax({
       url: url,
       success: renderMovies
     });
   };
 
-  var array = [];
+  // Función para mostrar filtrando por genero Sci-fi, Adventure y/o Fantasy
   function renderMovies(response) {
+    $('#movieList').empty();
+    arrResults = [];
+
     console.log(response);
-    var movieList = $('#movieList');
-    movieList.empty();
 
     for (var m in response.Search) {
       var movie = response.Search[m];
-      var li = $('<li class="list-group-item">');
-      var img = $('<img src="' + movie.Poster + '" with="50px">');
       var idmovie = movie.imdbID;
-      array.push(idmovie);
-      li.append(img);
-      li.append(movie.Title);
-      movieList.append(li);
+      arrResults.push(idmovie);
     }
-    console.log(array);
-  }
 
-  function getDetails(response) {
-    console.log(response);
-    for(var i=0; i<array.length; i++) {
-         var details = 'http://www.omdbapi.com/?&apikey=5bb8748d&i=' + array[i];
-         console.log(details.response);
-         // if()
+    console.log(arrResults);
+
+    for (var i = 0; i < arrResults.length; i++) {
+      $.getJSON('http://www.omdbapi.com/?&apikey=3a181f1c&i=' + arrResults[i])
+        .then(function(response) {
+          if ((response.Genre.indexOf('Sci-Fi') !== -1 || response.Genre.indexOf('Adventure') !== -1 || response.Genre.indexOf('Fantasy') !== -1) && response.Genre.indexOf('Animation') === -1) {
+            console.log(response);
+            var li = $('<li class="list-group-item">');
+            var img = $('<img src="' + response.Poster + '" with="50px">');   
+            li.append(img);
+            li.append(response.Title);
+            movieList.append(li);           
+          }
+        });
     }
   }
 });
