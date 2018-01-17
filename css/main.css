@@ -102,7 +102,7 @@ a:hover {
   padding: 15px;
 }
 
-a.btn-back {
+a.btn-back, a.btn-add {
   background-color: #fbfbfd96;
   border-radius: 50%;
   color: black;
@@ -163,6 +163,13 @@ h6 {
   font-weight: 700;
 }
 
+.actor-movie {
+  border: 1px solid #987ae4;
+  background-color: #e7deec;
+  border-radius: 10px;
+  height: 150px;
+}
+
 .sinopsis-movie, .cast-movie {
   padding: 20px;
 }
@@ -180,12 +187,9 @@ h6 {
 
 figure {
   padding: 1em;
+  box-sizing: border-box;
 }
 
 figcaption {
   margin-top: 0.5em;
-}
-
-.logo-nav {
-  width: 10%;
 }
