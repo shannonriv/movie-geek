@@ -6,7 +6,7 @@ $(document).ready(function(){
   function handleSearchBtn() {
     var title = inputFld.val();
     console.log(title)
-    var url = 'http://www.omdbapi.com/?&apikey=5bb8748d&s=' + title;
+    var url = 'http://www.omdbapi.com/?&apikey=5bb8748d&s=' + title + '&type=movie';
     $.ajax({
       url: url,
       success: renderMovies
