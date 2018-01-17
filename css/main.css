@@ -1,5 +1,5 @@
 * {
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 /* Movie Info */
@@ -13,16 +13,29 @@
   padding: 15px;
 }
 
-a.btn-back, a.btn-add {
-  background-color: #dcd9ebbe;  
+a.btn-back {
+  background-color: #fbfbfd96;  
   border-radius: 50%;
   color: black;  
   padding: 3px 10px;
 }
 
-.btn-back i, .btn-add i {
+a.btn-add, a.btn-share {
+  color: rgb(167, 166, 166);  
+  padding: 3px 10px;
+}
+
+a.btn-add:hover, a.btn-share:hover {
+  background-color: transparent;
+  border: 1px solid rgb(167, 166, 166);
+  border-radius: 50%;  
+  color: rgb(167, 166, 166);
+}
+
+.btn-back i, .btn-add i, .btn-share i {
   font-size: .8rem;
   font-weight: lighter;
+  margin-top: .6rem;
 }
 
 .main-poster {
@@ -30,11 +43,17 @@ a.btn-back, a.btn-add {
   background-color: #e7deec;
   border-radius: 10px;
   height: 150px;
+  margin-top: 10px;
 }
 
 .title-movie {
+  color: initial;
   font-weight: 700;
   padding-top: 10px;
+}
+
+.gray {
+  color: rgb(167, 166, 166);
 }
 
 .duration-movie, .release-year-movie, .director-movie, .tag-movie {
@@ -47,26 +66,24 @@ a.btn-back, a.btn-add {
   border: 1px solid gainsboro;
   border-radius: 3px;
   display: inline-block;
-  letter-spacing: 0.8px;
   padding: 3px;
   text-align: center;
-}
-
-.sinopsis-movie {
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 h6 {
   font-weight: 700;
 }
 
-.actor-movie {
-  border: 1px solid #987ae4;
-  background-color: #e7deec;
-  border-radius: 10px;  
-  height: 150px;
+.sinopsis-movie, .cast-movie {
+  padding: 20px;
 }
+
+.actors span {
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  padding: 0 5px;
+}
+
 .navbar {
   background-color: white;
   border:none;
