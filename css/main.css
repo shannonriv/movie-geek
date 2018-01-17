@@ -126,19 +126,19 @@ a.btn-back, a.btn-add {
   padding: 3px 10px;
 }
 
-a.btn-add, a.btn-share {
+a.btn-add, a.btn-share, a.btn-history {
   color: rgb(167, 166, 166);
   padding: 3px 10px;
 }
 
-a.btn-add:hover, a.btn-share:hover {
+a.btn-add:hover, a.btn-share:hover, a.btn-history:hover {
   background-color: transparent;
   border: 1px solid rgb(167, 166, 166);
   border-radius: 50%;
   color: rgb(167, 166, 166);
 }
 
-.btn-back i, .btn-add i, .btn-share i {
+.btn-back i, .btn-add i, .btn-share i, .btn-history i {
   font-size: .8rem;
   font-weight: lighter;
   margin-top: .6rem;
@@ -162,7 +162,7 @@ a.btn-add:hover, a.btn-share:hover {
   color: rgb(167, 166, 166);
 }
 
-.duration-movie, .release-year-movie, .director-movie, .tag-movie {
+.movie-duration, .release-year-movie, .movie-director, .tag-movie {
   font-size: .8rem;
   margin-bottom: .3rem;
   padding-bottom: 3px;
@@ -197,7 +197,6 @@ h6 {
   padding: 0 5px;
 }
 
-/* User Profile */
 /* Carrusel */
 .car-img {
   height: 85vh;
