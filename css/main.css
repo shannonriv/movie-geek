@@ -14,9 +14,9 @@
 }
 
 a.btn-back, a.btn-add {
-  background-color: #dcd9ebbe;  
+  background-color: #dcd9ebbe;
   border-radius: 50%;
-  color: black;  
+  color: black;
   padding: 3px 10px;
 }
 
@@ -64,7 +64,7 @@ h6 {
 .actor-movie {
   border: 1px solid #987ae4;
   background-color: #e7deec;
-  border-radius: 10px;  
+  border-radius: 10px;
   height: 150px;
 }
 .navbar {
@@ -74,6 +74,7 @@ h6 {
 
 figure {
   padding: 1em;
+  box-sizing: border-box;
 }
 
 figcaption {
