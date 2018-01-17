@@ -81,7 +81,7 @@ $(document).ready(function() {
       var photoUrl = user.photoURL;
       var emailVerified = user.emailVerified;
       var uid = user.uid;
-      // console.log(user);
+      console.log(user);
       // $username.text(name);
       // $userEmail.text(email);
       // $profilePhoto.attr('src', photoUrl);

@@ -26,8 +26,8 @@ $(document).ready(function() {
 
     console.log(response);
 
-    for (var m in response.Search) {
-      var movie = response.Search[m];
+    for (var i in response.Search) {
+      var movie = response.Search[i];
       var idmovie = movie.imdbID;
       arrResults.push(idmovie);
     }
