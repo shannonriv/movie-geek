@@ -85,13 +85,13 @@ $(document).ready(function() {
 
     // Auth Firebase para crear usuario con email
     firebase.auth().createUserWithEmailAndPassword($email, $password)
-      // .then(function(user) {
-      //   var username = $regName.val() + ' ' + $regLastname.val();    
-      //   return user.updateProfile({
-      //     displayName: username,
-      //     photoURL: 'https://firebasestorage.googleapis.com/v0/b/movie-geek-8b595.appspot.com/o/projectImages%2Favatar.svg?alt=media&token=6507d06b-3a28-476e-b077-64364643eb93'
-      //   });
-      // })
+      .then(function(user) {
+        var username = $regName.val() + ' ' + $regLastname.val();    
+        return user.updateProfile({
+          displayName: username,
+          photoURL: 'https://firebasestorage.googleapis.com/v0/b/movie-geek-8b595.appspot.com/o/projectImages%2Favatar.svg?alt=media&token=6507d06b-3a28-476e-b077-64364643eb93'
+        });
+      })
       .catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
@@ -99,31 +99,8 @@ $(document).ready(function() {
         // ...
       });
 
-    // firebase.auth().createUserWithEmailAndPassword(email, password)
-    //   .then(function(user) {
-    //     var username = $regName.val() + ' ' + $regLastname.val();    
-    //     return user.updateProfile({
-    //       displayName: username,
-    //       photoURL: 'https://firebasestorage.googleapis.com/v0/b/movie-geek-8b595.appspot.com/o/projectImages%2Favatar.svg?alt=media&token=6507d06b-3a28-476e-b077-64364643eb93'
-    //     });
-    //     console.log('todo bien');
-    //   })
-    //   .catch(function(error) {
-    //     // Handle Errors here.
-    //     var errorCode = error.code;
-    //     var errorMessage = error.message;
-    //     // ...
-    //     console.log('no funciona');
-    //   });
-
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
-        var username = $regName.val() + ' ' + $regLastname.val();    
-        return user.updateProfile({
-          displayName: username,
-          photoURL: 'https://firebasestorage.googleapis.com/v0/b/movie-geek-8b595.appspot.com/o/projectImages%2Favatar.svg?alt=media&token=6507d06b-3a28-476e-b077-64364643eb93'
-        });
-
         firebase.database().ref('users/' + user.uid).set({
           name: user.displayName,
           email: user.email,
