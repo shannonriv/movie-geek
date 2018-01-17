@@ -8,7 +8,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
   <!-- Fuentes -->
-  <link href="https://fonts.googleapis.com/css?family=Oxygen:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
   <!-- Estilos del proyecto -->
   <link rel="stylesheet" href="../css/main.css">
   <title>Regístrate</title>
@@ -16,6 +16,57 @@
 
 <body>
   <main>
+    <section class="container-fluid">
+      <div class="row">
+        <!-- Encabezado -->
+        <div class="page-header col-12 d-flex flex-column align-items-center justify-content-center">
+          <div class="row">
+            <figure class="col-6 offset-3 col-sm-4 offset-sm-4 my-0">
+              <img src="../assets/images/001-film-director.svg" alt="Geek glasses" class="img-fluid">
+            </figure>
+          </div>
+        </div>
+        <!-- Contenido register -->
+        <div class="geek-gray-bg w-100">
+          <div class="page-content col-10 offset-1 d-flex flex-column align-items-center justify-content-center">
+            <form class="max400">
+              <div class="form-row">
+                <div class="col-6">
+                  <input type="text" id="inputName" class="form-control rounded-corners" placeholder="Nombre" tabindex="0" data-toggle="popover"
+                    data-placement="top" data-trigger="focus" data-content="Aquí tu nombre." required>
+                </div>
+                <div class="col-6">
+                  <input type="text" id="inputLastName" class="form-control rounded-corners" placeholder="Apellido" data-toggle="popover" data-placement="top"
+                    data-trigger="focus" data-content="Aquí tu apellido." required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="email" id="inputEmail" class="form-control rounded-corners" placeholder="Correo electrónico" data-toggle="popover"
+                  data-placement="top" data-trigger="focus" data-content="Escribe una dirección de correo válida." required>
+              </div>
+              <div class="form-group">
+                <input type="password" id="inputPassword" class="form-control rounded-corners" placeholder="Contraseña" data-toggle="popover"
+                  data-placement="top" data-trigger="focus" data-content="Tu contraseña debe tener al menos 6 carácteres entre letras y números."
+                  required>
+              </div>
+              <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                <label class="form-check-label" for="exampleCheck1">Estoy de acuerdo con los
+                  <a href="#">Términos y Condiciones</a>
+                </label>
+              </div>
+              <div class="form-group col-8 offset-2 col-md-6 offset-md-3">
+                <button id="email-login" class="btn btn-geek form-control rounded-corners">Regístrate</button>
+              </div>
+            </form>
+            <p class="text-center">Si ya tienes una cuenta...
+              <a href="login.html">Inicia sesión.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
   </main>
 
   <!-- Firebase -->

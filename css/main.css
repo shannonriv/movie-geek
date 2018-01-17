@@ -11,18 +11,6 @@
 }
 
 /* Log in */
-#login-header {
-  min-height: 40vh;
-}
-
-#login-content {
-  min-height: 60vh;
-}
-
-#login-content form {
-  max-width: 400px;
-}
-
 #fb-login {
   background: linear-gradient(#4267B2, #375592);
   box-shadow: 2px 4px 10px 0px rgba(57, 59, 70, 0.45);  
@@ -41,6 +29,9 @@
   background: linear-gradient(#B53E2F, #B53E2F);
 }
 
+/* Register */
+
+
 /* Helpers */
 a {
   color: var(--medium-geek);
@@ -55,8 +46,24 @@ a:hover {
   min-height: 100vh;
 }
 
+.max400 {
+  max-width: 400px;
+}
+
+.page-header {
+  min-height: 40vh;
+}
+
+.page-content {
+  min-height: 60vh;
+}
+
 .geek-bg {
   background: linear-gradient(var(--medium-geek), var(--main-geek) 50%, #fff);
+}
+
+.geek-gray-bg {
+  background: linear-gradient(#fff, #e9e9e9)  
 }
 
 .icon-btn {

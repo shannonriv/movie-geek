@@ -8,8 +8,9 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
   <!-- Fuentes -->
-  <link href="https://fonts.googleapis.com/css?family=Oxygen:400" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
   <!-- Estilos del proyecto -->
   <link rel="stylesheet" href="../css/main.css">
   <title>Inicia sesión</title>
@@ -19,13 +20,18 @@
   <main>
     <section class="container-fluid">
       <div class="row">
-        <div id="login-header" class="col-12 geek-bg d-flex flex-column align-items-center justify-content-center">
+        <!-- Encabezado -->
+        <div class="page-header col-12 geek-bg d-flex flex-column align-items-center justify-content-center">
           <div class="row">
-            <figure class="col-6 offset-3 col-sm-4 offset-sm-4 my-0"><img src="../assets/images/001-glasses.svg" alt="Geek glasses" class="img-fluid"></figure>
+            <figure class="col-6 offset-3 col-sm-4 offset-sm-4 my-0">
+              <img src="../assets/images/001-glasses.svg" alt="Geek glasses" class="img-fluid">
+            </figure>
           </div>
         </div>
-        <div id="login-content" class="col-10 offset-1 d-flex flex-column align-items-center justify-content-center">
-          <form>
+        <!-- Contenido login -->
+        <div class="page-content col-10 offset-1 d-flex flex-column align-items-center justify-content-center">
+          <!-- Formulario de log in -->
+          <form class="max400">
             <div class="form-row mb-2">
               <div class="form-group col-12 ">
                 <label for="email" class="sr-only"></label>
@@ -42,17 +48,25 @@
                 <button id="email-login" class="btn btn-geek form-control rounded-corners">Log in</button>
               </div>
             </div>
-            <small class="d-block text-center my-3">O si prefieres...</small>            
+            <!-- Inicio con redes sociales -->
+            <small class="d-block text-center my-3">O si prefieres...</small>
             <div class="form-row">
               <div class="form-group col-6">
-                <button type="button" id="fb-login" class="btn btn-primary icon-btn rounded-corners float-right"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+                <button type="button" id="fb-login" class="btn btn-primary icon-btn rounded-corners float-right">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </button>
               </div>
               <div class="form-group col-6">
-                <button type="button" id="google-login" class="btn btn-danger icon-btn rounded-corners"><i class="fa fa-google" aria-hidden="true"></i></button>
+                <button type="button" id="google-login" class="btn btn-danger icon-btn rounded-corners">
+                  <i class="fa fa-google" aria-hidden="true"></i>
+                </button>
               </div>
             </div>
           </form>
-          <p>¿No estás registrado? <a href="register.html">Crea una cuenta.</a></p>       
+          <!-- Ir a la vista register -->
+          <p class="text-center">¿No estás registrado?
+            <a href="register.html">Crea una cuenta.</a>
+          </p>
         </div>
       </div>
     </section>
