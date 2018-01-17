@@ -185,6 +185,14 @@ h6 {
   border:none;
 }
 
+.margin-top {
+  margin-top: 2em;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
 figure {
   padding: 1em;
   box-sizing: border-box;
@@ -192,4 +200,34 @@ figure {
 
 figcaption {
   margin-top: 0.5em;
+}
+
+li:active {
+  border-bottom: 1px solid blue;
+}
+
+.box-shadow {
+  box-shadow: 6px 7px 6px -4px rgb(206, 206, 206);
+}
+
+.fa-trash-o {
+  color: #000;
+  font-size: 1.5em;
+}
+
+@media screen and (min-width:740px) {
+  #user-profile-panel {
+    width: 250px;
+    border: 1px solid grey;
+    box-shadow: 6px 7px 6px -4px rgb(206, 206, 206);
+    height: 50vh;
+    float: left;
+    border-radius: 20px;
+  }
+
+  #myTab, #myTabContent {
+    position: relative;
+    left: 8%;
+    max-width: 1000px;
+  }
 }
