@@ -1,5 +1,94 @@
+:root {
+  --main-geek: #5c6875;
+  --dark-geek: #1b1f3b;
+  --medium-geek: #94a3b6;
+  --main-geek-hover: #4C5660;
+  --medium-geek-hover: #7A8695;
+}
+
 * {
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Log in */
+#fb-login {
+  background: linear-gradient(#4267B2, #375592);
+  box-shadow: 2px 4px 10px 0px rgba(57, 59, 70, 0.45);
+}
+
+#fb-login:hover {
+  background: linear-gradient(#375592, #375592);
+}
+
+#google-login {
+  background: linear-gradient(#dd4b39, #B53E2F);
+  box-shadow: 2px 4px 10px 0px rgba(57, 59, 70, 0.45);
+}
+
+#google-login:hover {
+  background: linear-gradient(#B53E2F, #B53E2F);
+}
+
+/* Register */
+
+
+/* Helpers */
+a {
+  color: var(--main-geek);
+}
+
+a:hover {
+  color: var(--medium-geek);
+  text-decoration: none;
+}
+
+.min100vh {
+  min-height: 100vh;
+}
+
+.max400 {
+  max-width: 400px;
+}
+
+.page-header {
+  min-height: 40vh;
+}
+
+.page-content {
+  min-height: 60vh;
+}
+
+.geek-bg {
+  background: linear-gradient(var(--main-geek), var(--medium-geek) 50%, #fff);
+}
+
+.geek-gray-bg {
+  background: linear-gradient(#fff, #e9e9e9)
+}
+
+.icon-btn {
+  width: 36px;
+  border: none;
+}
+
+.btn-geek {
+  background: linear-gradient(to right, var(--medium-geek),var(--main-geek));
+  color: #ffff;
+  box-shadow: 2px 4px 10px 0px rgba(57, 59, 70, 0.45);
+  transition: .5s;
+}
+
+.btn-geek:hover {
+  background: linear-gradient(to right, var(--medium-geek-hover),var(--main-geek-hover));
+}
+
+.rounded-corners {
+  border-radius: 20px;
+}
+
+.form-control.geek-input {
+  border: none;
+  border-bottom: 1px solid #ced4da;
 }
 
 /* Movie Info */
@@ -20,9 +109,22 @@ a.btn-back, a.btn-add {
   padding: 3px 10px;
 }
 
-.btn-back i, .btn-add i {
+a.btn-add, a.btn-share {
+  color: rgb(167, 166, 166);
+  padding: 3px 10px;
+}
+
+a.btn-add:hover, a.btn-share:hover {
+  background-color: transparent;
+  border: 1px solid rgb(167, 166, 166);
+  border-radius: 50%;
+  color: rgb(167, 166, 166);
+}
+
+.btn-back i, .btn-add i, .btn-share i {
   font-size: .8rem;
   font-weight: lighter;
+  margin-top: .6rem;
 }
 
 .main-poster {
@@ -30,11 +132,17 @@ a.btn-back, a.btn-add {
   background-color: #e7deec;
   border-radius: 10px;
   height: 150px;
+  margin-top: 10px;
 }
 
 .title-movie {
+  color: initial;
   font-weight: 700;
   padding-top: 10px;
+}
+
+.gray {
+  color: rgb(167, 166, 166);
 }
 
 .duration-movie, .release-year-movie, .director-movie, .tag-movie {
@@ -47,14 +155,8 @@ a.btn-back, a.btn-add {
   border: 1px solid gainsboro;
   border-radius: 3px;
   display: inline-block;
-  letter-spacing: 0.8px;
   padding: 3px;
   text-align: center;
-}
-
-.sinopsis-movie {
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 h6 {
@@ -67,6 +169,17 @@ h6 {
   border-radius: 10px;
   height: 150px;
 }
+
+.sinopsis-movie, .cast-movie {
+  padding: 20px;
+}
+
+.actors span {
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  padding: 0 5px;
+}
+
 .navbar {
   background-color: white;
   border:none;
