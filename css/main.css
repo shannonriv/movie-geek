@@ -2,7 +2,8 @@
   --main-geek: #815ddd;
   --dark-geek: #1b1f3b;
   --medium-geek: #454ade;
-  --gray-geek: 
+  --main-geek-hover: #6A4DB5;
+  --medium-geek-hover: #393DB6;
 }
 
 * {
@@ -10,20 +11,75 @@
 }
 
 /* Log in */
+#login-header {
+  min-height: 40vh;
+}
 
+#login-content {
+  min-height: 60vh;
+}
+
+#login-content form {
+  max-width: 400px;
+}
+
+#fb-login {
+  background: linear-gradient(#4267B2, #375592);
+  box-shadow: 2px 4px 10px 0px rgba(57, 59, 70, 0.45);  
+}
+
+#fb-login:hover {
+  background: linear-gradient(#375592, #375592);
+}
+
+#google-login {
+  background: linear-gradient(#dd4b39, #B53E2F);
+  box-shadow: 2px 4px 10px 0px rgba(57, 59, 70, 0.45);  
+}
+
+#google-login:hover {
+  background: linear-gradient(#B53E2F, #B53E2F);
+}
 
 /* Helpers */
+a {
+  color: var(--medium-geek);
+}
+
+a:hover {
+  color: var(--dark-geek);
+  text-decoration: none;
+}
+
 .min100vh {
   min-height: 100vh;
 }
 
-.btn-geek {
-  background: linear-gradient(to right, var(--medium-geek),var(--main-geek));
-  color: #ffff;
+.geek-bg {
+  background: linear-gradient(var(--medium-geek), var(--main-geek) 50%, #fff);
+}
+
+.icon-btn {
+  width: 36px;
   border: none;
-  box-shadow: 2px 2px 3px 2px rgba(57, 59, 70, 0.45);
+}
+
+.btn-geek {
+  background: linear-gradient(to right, var(--medium-geek),var(--main-geek));  
+  color: #ffff;
+  box-shadow: 2px 4px 10px 0px rgba(57, 59, 70, 0.45);
+  transition: 5s;
+}
+
+.btn-geek:hover {
+  background: linear-gradient(to right, var(--medium-geek-hover),var(--main-geek-hover));  
 }
 
 .rounded-corners {
   border-radius: 20px;
+}
+
+.form-control.geek-input {
+  border: none;
+  border-bottom: 1px solid #ced4da;
 }
