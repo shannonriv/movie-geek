@@ -13,7 +13,7 @@
 /* Log in */
 #fb-login {
   background: linear-gradient(#4267B2, #375592);
-  box-shadow: 2px 4px 10px 0px rgba(57, 59, 70, 0.45);  
+  box-shadow: 2px 4px 10px 0px rgba(57, 59, 70, 0.45);
 }
 
 #fb-login:hover {
@@ -22,7 +22,7 @@
 
 #google-login {
   background: linear-gradient(#dd4b39, #B53E2F);
-  box-shadow: 2px 4px 10px 0px rgba(57, 59, 70, 0.45);  
+  box-shadow: 2px 4px 10px 0px rgba(57, 59, 70, 0.45);
 }
 
 #google-login:hover {
@@ -63,7 +63,7 @@ a:hover {
 }
 
 .geek-gray-bg {
-  background: linear-gradient(#fff, #e9e9e9)  
+  background: linear-gradient(#fff, #e9e9e9)
 }
 
 .icon-btn {
@@ -72,14 +72,14 @@ a:hover {
 }
 
 .btn-geek {
-  background: linear-gradient(to right, var(--medium-geek),var(--main-geek));  
+  background: linear-gradient(to right, var(--medium-geek),var(--main-geek));
   color: #ffff;
   box-shadow: 2px 4px 10px 0px rgba(57, 59, 70, 0.45);
   transition: .5s;
 }
 
 .btn-geek:hover {
-  background: linear-gradient(to right, var(--medium-geek-hover),var(--main-geek-hover));  
+  background: linear-gradient(to right, var(--medium-geek-hover),var(--main-geek-hover));
 }
 
 .rounded-corners {
@@ -102,22 +102,22 @@ a:hover {
   padding: 15px;
 }
 
-a.btn-back {
-  background-color: #fbfbfd96;  
+a.btn-back, a.btn-add {
+  background-color: #fbfbfd96;
   border-radius: 50%;
-  color: black;  
+  color: black;
   padding: 3px 10px;
 }
 
 a.btn-add, a.btn-share {
-  color: rgb(167, 166, 166);  
+  color: rgb(167, 166, 166);
   padding: 3px 10px;
 }
 
 a.btn-add:hover, a.btn-share:hover {
   background-color: transparent;
   border: 1px solid rgb(167, 166, 166);
-  border-radius: 50%;  
+  border-radius: 50%;
   color: rgb(167, 166, 166);
 }
 
@@ -163,6 +163,13 @@ h6 {
   font-weight: 700;
 }
 
+.actor-movie {
+  border: 1px solid #987ae4;
+  background-color: #e7deec;
+  border-radius: 10px;
+  height: 150px;
+}
+
 .sinopsis-movie, .cast-movie {
   padding: 20px;
 }
@@ -180,6 +187,7 @@ h6 {
 
 figure {
   padding: 1em;
+  box-sizing: border-box;
 }
 
 figcaption {

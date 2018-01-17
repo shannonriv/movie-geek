@@ -39,11 +39,10 @@
       </nav>
     </header>
 
-    <!-- Sección donde aparecerá imagen de usuario y nombre -->
-    <section>
-      <figure class="">
-        <!-- <img src="../assets/images/geek-avatar-man.svg" alt="geek-avatar-man" class="img-fluid border border-secondary rounded-circle"> -->
-        <img src="../assets/images/geek-avatar-woman.svg" alt="geek-avatar-woman" class="img-fluid border border-secondary rounded-circle">
+    <!-- Sección donde aparecerá imagen y nombre de usuario -->
+    <section class="container">
+      <figure class="col-4 mx-auto text-center">
+        <img src="../assets/images/user-avatar.svg" alt="user-avatar" class="img-fluid border border-secondary rounded-circle">
         <figcaption id="user-name" class="text-center">Nombre del usario</figcaption>
       </figure>
     </section>
@@ -54,7 +53,7 @@
       <!-- Pestañas -->
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" id="watchlist-tab" data-toggle="tab" href="#watchlist" role="tab" aria-controls="watchlist" aria-selected="true">Películas a ver</a>
+          <a class="nav-link active" id="watchlist-tab" data-toggle="tab" href="#watchlist" role="tab" aria-controls="watchlist" aria-selected="true">Watchlist</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="false">Historial</a>
@@ -66,13 +65,13 @@
 
       <!-- Contenido de pestañas -->
       <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="watchlist" role="tabpanel" aria-labelledby="watchlist-tab">
+        <div class="tab-pane fade show active" id="watchlist" role="tabpanel" aria-labelledby="watchlist-tab" data-toggle="tooltip" data-placement="top" title="Películas por ver">
           <p>Lista de películas que se quieren ver</p>
         </div>
-        <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab">
+        <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab" data-toggle="tooltip" data-placement="top" title="Películas vistas">
           <p>Lista de películas que ya se vieron</p>
         </div>
-        <div class="tab-pane fade" id="recommendations" role="tabpanel" aria-labelledby="recommendations-tab">
+        <div class="tab-pane fade" id="recommendations" role="tabpanel" aria-labelledby="recommendations-tab" data-toggle="tooltip" data-placement="top" title="Películas recomendadas">
           <p>Lista de películas que se recomiendan ver</p>
         </div>
       </div>
