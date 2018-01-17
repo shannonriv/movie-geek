@@ -2,3 +2,15 @@
   font-family: 'Oxygen', sans-serif;
 }
 
+.navbar {
+  background-color: white;
+  border:none;
+}
+
+figure {
+  padding: 1em;
+}
+
+figcaption {
+  margin-top: 0.5em;
+}
