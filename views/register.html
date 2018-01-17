@@ -32,31 +32,31 @@
             <form class="max400">
               <div class="form-row">
                 <div class="col-6">
-                  <input type="text" id="inputName" class="form-control rounded-corners" placeholder="Nombre" tabindex="0" data-toggle="popover"
-                    data-placement="top" data-trigger="focus" data-content="Aquí tu nombre." required>
+                  <input type="text" id="reg-name" class="form-control geek-input rounded-corners" placeholder="Nombre" tabindex="0" data-toggle="popover"
+                    data-placement="top" data-trigger="focus" data-content="Tu nombre debe tener al menos 3 caracteres." required>
                 </div>
                 <div class="col-6">
-                  <input type="text" id="inputLastName" class="form-control rounded-corners" placeholder="Apellido" data-toggle="popover" data-placement="top"
-                    data-trigger="focus" data-content="Aquí tu apellido." required>
+                  <input type="text" id="reg-lastname" class="form-control geek-input rounded-corners" placeholder="Apellido" data-toggle="popover" data-placement="top"
+                    data-trigger="focus" data-content="Tu apellido debe tener al menos 3 caracteres.." required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="email" id="inputEmail" class="form-control rounded-corners" placeholder="Correo electrónico" data-toggle="popover"
+                <input type="email" id="reg-email" class="form-control geek-input rounded-corners" placeholder="Correo electrónico" data-toggle="popover"
                   data-placement="top" data-trigger="focus" data-content="Escribe una dirección de correo válida." required>
               </div>
               <div class="form-group">
-                <input type="password" id="inputPassword" class="form-control rounded-corners" placeholder="Contraseña" data-toggle="popover"
+                <input type="password" id="reg-password" class="form-control geek-input rounded-corners" placeholder="Contraseña" data-toggle="popover"
                   data-placement="top" data-trigger="focus" data-content="Tu contraseña debe tener al menos 6 carácteres entre letras y números."
                   required>
               </div>
               <div class="form-check mb-3">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                <label class="form-check-label" for="exampleCheck1">Estoy de acuerdo con los
+                <input type="checkbox" class="form-check-input" id="terms-check" required>
+                <label class="form-check-label" for="terms-check">Estoy de acuerdo con los
                   <a href="#">Términos y Condiciones</a>
                 </label>
               </div>
               <div class="form-group col-8 offset-2 col-md-6 offset-md-3">
-                <button id="email-login" class="btn btn-geek form-control rounded-corners">Regístrate</button>
+                <button id="register" class="btn btn-geek form-control rounded-corners" disabled>Regístrate</button>
               </div>
             </form>
             <p class="text-center">Si ya tienes una cuenta...
@@ -75,8 +75,11 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <!-- Bootstrap -->
   <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../vendors/bootstrap/js/bootstrap.bundle.min.js"></script>  
   <!-- Scripts del proyecto -->
   <script src="../js/app.js"></script>
+  <script src="../js/register.js"></script>
+  
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-# Hackhathon: Movie Geek
+# Hackhathon Challenge: Movie Geek
 
 ## Recursos utilizados
 
