@@ -78,17 +78,15 @@ $(document).ready(function() {
     }
   }
 
+  // Rgistro de usuario nuevo
   function register() {
-    var $emailReg = $emailInput.val();
-    var $passwordReg = $passwordInput.val();
-  
-    console.log($emailReg);
-    console.log($passwordReg);
+    var $email = $regEmail.val();
+    var $password = $regPassword.val();
 
-    // Registro de Usuario (NUEVO) con FIREBASE
-    firebase.auth().createUserWithEmailAndPassword($emailReg, $passwordReg)
+    // Auth Firebase para crear usuario con email
+    firebase.auth().createUserWithEmailAndPassword($email, $password)
       .then(function(user) {
-        var username = $nameInput.val() + ' ' + $lastInput.val();    
+        var username = $regName.val() + ' ' + $regLastname.val();    
         return user.updateProfile({
           displayName: username,
           photoURL: 'https://firebasestorage.googleapis.com/v0/b/codebook-cd8c9.appspot.com/o/postedImages%2Fdefault.jpg?alt=media&token=5897a927-f9b6-4ded-9331-0dc8032ae325'
@@ -109,6 +107,7 @@ $(document).ready(function() {
           uid: user.uid,
           profilePhoto: user.photoURL
         }).then(user => {
+          // Redireccionar a home
           window.location.href = 'home.html';
         }); 
         console.log('User is registered.');

@@ -1,9 +1,9 @@
 :root {
-  --main-geek: #815ddd;
+  --main-geek: #5c6875;
   --dark-geek: #1b1f3b;
-  --medium-geek: #454ade;
-  --main-geek-hover: #6A4DB5;
-  --medium-geek-hover: #393DB6;
+  --medium-geek: #94a3b6;
+  --main-geek-hover: #4C5660;
+  --medium-geek-hover: #7A8695;
 }
 
 * {
@@ -34,11 +34,11 @@
 
 /* Helpers */
 a {
-  color: var(--medium-geek);
+  color: var(--main-geek);
 }
 
 a:hover {
-  color: var(--dark-geek);
+  color: var(--medium-geek);
   text-decoration: none;
 }
 
@@ -59,7 +59,7 @@ a:hover {
 }
 
 .geek-bg {
-  background: linear-gradient(var(--medium-geek), var(--main-geek) 50%, #fff);
+  background: linear-gradient(var(--main-geek), var(--medium-geek) 50%, #fff);
 }
 
 .geek-gray-bg {
