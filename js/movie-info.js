@@ -61,7 +61,7 @@ function addToHistory() {
 function likeAndDislike() {
   // Variable del ícono para compartir películas
   var likeBtn = $('#btn-share');
-  console.log(likeBtn);
+  // console.log(likeBtn);
 }
 
 $(document).ready(begin);
