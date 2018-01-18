@@ -112,6 +112,20 @@ a:hover {
   width: 65px;
 }
 
+.margin {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.list {
+  display: block;
+  border: 1px solid grey;
+  padding: 5px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 5px #999;
+  width: 80%;
+}
+
 @media (max-width: 991.99px) {
   .navbar-brand {
     text-align: center;
@@ -252,6 +266,13 @@ li:active {
 }
 
 /* Footer */
+
+a.btn-up {
+  background: linear-gradient(-100deg, #F59C98, rgb(252, 187, 186)); 
+  border-radius: 50%;
+  color: #ffff;
+  padding: 10px 20px;
+}
 
 footer {
   margin-top: 15px;
