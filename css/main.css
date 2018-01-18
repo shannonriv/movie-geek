@@ -94,17 +94,28 @@ a:hover {
 /* Search */
 
 .navbar {
-  background-color: var(--medium-geek); /*lavender*/
+  background: linear-gradient(-90deg, #505C67, rgb(144, 156, 177));
+  color: #ffff;
+}
+
+.navbar-nav .nav-link, .navbar-toggler-icon {
+  color: #ffff;
+}
+
+.btn-log-out {
+  background: linear-gradient(-100deg, rgb(98, 179, 241), rgb(144, 206, 253));
+  color: #ffff;
+  padding: 8px 15px;
 }
 
 .logo-nav {
-  width: 45px;
+  width: 65px;
 }
 
 @media (max-width: 991.99px) {
   .navbar-brand {
     text-align: center;
-    width: 80%;
+    padding-left: 15px;
   }
 }
 
@@ -119,7 +130,8 @@ h6 {
 }
 
 .mrgn {
-  margin: 5px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 a.btn-add, a.btn-share, a.btn-history {
