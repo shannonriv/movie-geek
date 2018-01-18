@@ -93,22 +93,43 @@ a:hover {
 
 /* Search */
 
-.navbar {
-  background-color: var(--medium-geek); /*lavender*/
+.navbar, footer {
+  background: linear-gradient(-90deg, #505C67, rgb(144, 156, 177));
+  color: #ffff;
+}
+
+.navbar-nav .nav-link, .navbar-toggler-icon {
+  color: #ffff;
+}
+
+.btn-log-out {
+  background: linear-gradient(-100deg, rgb(98, 179, 241), rgb(144, 206, 253));
+  color: #ffff;
+  padding: 8px 15px;
 }
 
 .logo-nav {
-  width: 45px;
+  width: 65px;
 }
 
 .margin {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
+.list {
+  display: block;
+  border: 1px solid grey;
+  padding: 5px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 5px #999;
+  width: 80%;
+}
+
 @media (max-width: 991.99px) {
   .navbar-brand {
     text-align: center;
-    width: 80%;
+    padding-left: 15px;
   }
 }
 
@@ -123,16 +144,24 @@ h6 {
 }
 
 .mrgn {
-  margin: 5px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-a.btn-add, a.btn-share, a.btn-history {
+a.btn-add, a.btn-history, a.btn-thumb-up {
+  background: linear-gradient(-100deg, #F59C98, rgb(252, 187, 186));
+  border-radius: 50%;
+  color: #ffff;
   padding: 3px 10px;
 }
 
-a.btn-add:hover, a.btn-share:hover, a.btn-history:hover {
+a.btn-add:hover, a.btn-history:hover, a.btn-thumb-up:hover {
   background-color: transparent;
   color: var(--dark-geek);
+}
+
+.hand-color:hover {
+  background: rgb(177, 42, 38);
 }
 
 .main-poster figure {
@@ -232,11 +261,11 @@ li:active {
   }
 }
 
-.list {
-  display: block;
-  border: 1px solid grey;
-  padding: 5px;
-  margin-top: 10px;
-  box-shadow: 2px 2px 5px #999;
-  width: 80%;
+footer {
+  margin-top: 15px;
+  padding: 10px;
+}
+
+footer a {
+  color: #ffff;
 }
