@@ -840,12 +840,12 @@ a {
   padding: 8px 15px;
 }
 
-.navbar-brand {
+/* .navbar-brand {
   position: absolute;
   left: 50%;
   top: 6.5px;
   transform: translateX(-50%);
-}
+} */
 
 .logo-nav {
   width: 150px;
@@ -926,14 +926,8 @@ a.btn-add:hover, a.btn-share:hover, a.btn-history:hover {
 
 /* Carrusel */
 
-.car-img {
-  height: 90vh;
-}
-
-@media (max-width: 992px) {
-  .car-img {
-    height: 85vh;
-  }
+.carousel-inner {
+  max-height: 50vh;
 }
 
 /* Perfil de usuario*/
