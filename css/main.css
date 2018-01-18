@@ -11,6 +11,10 @@
 }
 
 /* Splash */
+#splash {
+  background-color: #1b1f3b;
+}
+
 #loader {
   width: 80px;
   height: 40px;
@@ -19,7 +23,6 @@
   left: 50%;
   margin: -20px -40px;
   z-index: 1000;
-
 }
 
 .lightsaber {
@@ -75,7 +78,7 @@
   top: 10px;
   width: 1px;
   height: 5px;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(242, 242, 242, 0);
   -webkit-transform: rotateZ(0deg);
   transform: rotateZ(0deg);
 }
@@ -274,25 +277,25 @@
 
 @-webkit-keyframes particles1 {
   0% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(35deg) translateY(0px);
       transform: rotateZ(35deg) translateY(0px);
   }
   
   63% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(35deg) translateY(0px);
       transform: rotateZ(35deg) translateY(0px);
   }
   
   64% {
-      background-color: rgba(51, 51, 51,1);
+      background-color: rgba(242, 242, 242,1);
       -webkit-transform: rotateZ(35deg) translateY(0px);
       transform: rotateZ(35deg) translateY(0px);
   }
   
   100% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(35deg) translateY(-30px);
       transform: rotateZ(35deg) translateY(-30px);
   }
@@ -300,31 +303,31 @@
 
 @-webkit-keyframes particles2 {
   0% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242, 0);
       -webkit-transform: rotateZ(-65deg) translateY(0px);
       transform: rotateZ(-65deg) translateY(0px);
   }
   
   63% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-65deg) translateY(0px);
       transform: rotateZ(-65deg) translateY(0px);
   }
   
   64% {
-      background-color: rgba(51, 51, 51,1);
+      background-color: rgba(242, 242, 242,1);
       -webkit-transform: rotateZ(-65deg) translateY(0px);
       transform: rotateZ(-65deg) translateY(0px);
   }
   
   95% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-65deg) translateY(-40px);
       transform: rotateZ(-65deg) translateY(-40px);
   }
   
   100% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-65deg) translateY(-40px);
       transform: rotateZ(-65deg) translateY(-40px);
   }
@@ -332,31 +335,31 @@
 
 @-webkit-keyframes particles3 {
   0% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-75deg) translateY(0px);
       transform: rotateZ(-75deg) translateY(0px);
   }
   
   63% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-75deg) translateY(0px);
       transform: rotateZ(-75deg) translateY(0px);
   }
   
   64% {
-      background-color: rgba(51, 51, 51,1);
+      background-color: rgba(242, 242, 242,1);
       -webkit-transform: rotateZ(-75deg) translateY(0px);
       transform: rotateZ(-75deg) translateY(0px);
   }
   
   97% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-75deg) translateY(-35px);
       transform: rotateZ(-75deg) translateY(-35px);
   }
   
   100% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-75deg) translateY(-35px);
       transform: rotateZ(-75deg) translateY(-35px);
   }
@@ -364,31 +367,31 @@
 
 @-webkit-keyframes particles4 {
   0% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-25deg) translateY(0px);
       transform: rotateZ(-25deg) translateY(0px);
   }
   
   63% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-25deg) translateY(0px);
       transform: rotateZ(-25deg) translateY(0px);
   }
   
   64% {
-      background-color: rgba(51, 51, 51,1);
+      background-color: rgba(242, 242, 242,1);
       -webkit-transform: rotateZ(-25deg) translateY(0px);
       transform: rotateZ(-25deg) translateY(0px);
   }
   
   97% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-25deg) translateY(-30px);
       transform: rotateZ(-25deg) translateY(-30px);
   }
   
   100% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-25deg) translateY(-30px);
       transform: rotateZ(-25deg) translateY(-30px);
   }
@@ -396,31 +399,31 @@
 
 @-webkit-keyframes particles5 {
   0% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(65deg) translateY(0px);
       transform: rotateZ(65deg) translateY(0px);
   }
   
   63% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(65deg) translateY(0px);
       transform: rotateZ(65deg) translateY(0px);
   }
   
   64% {
-      background-color: rgba(51, 51, 51,1);
+      background-color: rgba(242, 242, 242,1);
       -webkit-transform: rotateZ(65deg) translateY(0px);
       transform: rotateZ(65deg) translateY(0px);
   }
   
   97% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(65deg) translateY(-35px);
       transform: rotateZ(65deg) translateY(-35px);
   }
   
   100% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(65deg) translateY(-35px);
       transform: rotateZ(65deg) translateY(-35px);
   }
@@ -582,25 +585,25 @@
 
 @keyframes particles1 {
   0% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(35deg) translateY(0px);
       transform: rotateZ(35deg) translateY(0px);
   }
   
   63% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(35deg) translateY(0px);
       transform: rotateZ(35deg) translateY(0px);
   }
   
   64% {
-      background-color: rgba(51, 51, 51,1);
+      background-color: rgba(242, 242, 242,1);
       -webkit-transform: rotateZ(35deg) translateY(0px);
       transform: rotateZ(35deg) translateY(0px);
   }
   
   100% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(35deg) translateY(-30px);
       transform: rotateZ(35deg) translateY(-30px);
   }
@@ -608,31 +611,31 @@
 
 @keyframes particles2 {
   0% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-65deg) translateY(0px);
       transform: rotateZ(-65deg) translateY(0px);
   }
   
   63% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-65deg) translateY(0px);
       transform: rotateZ(-65deg) translateY(0px);
   }
   
   64% {
-      background-color: rgba(51, 51, 51,1);
+      background-color: rgba(242, 242, 242,1);
       -webkit-transform: rotateZ(-65deg) translateY(0px);
       transform: rotateZ(-65deg) translateY(0px);
   }
   
   95% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-65deg) translateY(-40px);
       transform: rotateZ(-65deg) translateY(-40px);
   }
   
   100% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-65deg) translateY(-40px);
       transform: rotateZ(-65deg) translateY(-40px);
   }
@@ -640,31 +643,31 @@
 
 @keyframes particles3 {
   0% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-75deg) translateY(0px);
       transform: rotateZ(-75deg) translateY(0px);
   }
   
   63% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-75deg) translateY(0px);
       transform: rotateZ(-75deg) translateY(0px);
   }
   
   64% {
-      background-color: rgba(51, 51, 51,1);
+      background-color: rgba(242, 242, 242,1);
       -webkit-transform: rotateZ(-75deg) translateY(0px);
       transform: rotateZ(-75deg) translateY(0px);
   }
   
   97% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-75deg) translateY(-35px);
       transform: rotateZ(-75deg) translateY(-35px);
   }
   
   100% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-75deg) translateY(-35px);
       transform: rotateZ(-75deg) translateY(-35px);
   }
@@ -672,31 +675,31 @@
 
 @keyframes particles4 {
   0% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-25deg) translateY(0px);
       transform: rotateZ(-25deg) translateY(0px);
   }
   
   63% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-25deg) translateY(0px);
       transform: rotateZ(-25deg) translateY(0px);
   }
   
   64% {
-      background-color: rgba(51, 51, 51,1);
+      background-color: rgba(242, 242, 242,1);
       -webkit-transform: rotateZ(-25deg) translateY(0px);
       transform: rotateZ(-25deg) translateY(0px);
   }
   
   97% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-25deg) translateY(-30px);
       transform: rotateZ(-25deg) translateY(-30px);
   }
   
   100% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(-25deg) translateY(-30px);
       transform: rotateZ(-25deg) translateY(-30px);
   }
@@ -704,31 +707,31 @@
 
 @keyframes particles5 {
   0% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(65deg) translateY(0px);
       transform: rotateZ(65deg) translateY(0px);
   }
   
   63% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(65deg) translateY(0px);
       transform: rotateZ(65deg) translateY(0px);
   }
   
   64% {
-      background-color: rgba(51, 51, 51,1);
+      background-color: rgba(242, 242, 242,1);
       -webkit-transform: rotateZ(65deg) translateY(0px);
       transform: rotateZ(65deg) translateY(0px);
   }
   
   97% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(65deg) translateY(-35px);
       transform: rotateZ(65deg) translateY(-35px);
   }
   
   100% {
-      background-color: rgba(51, 51, 51,0);
+      background-color: rgba(242, 242, 242,0);
       -webkit-transform: rotateZ(65deg) translateY(-35px);
       transform: rotateZ(65deg) translateY(-35px);
   }
