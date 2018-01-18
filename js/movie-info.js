@@ -7,6 +7,7 @@ function begin() {
 function addToWatchList() {
   // Variable del ícono para agregar a lista de películas por ver luego
   var addBtn = $('#btn-add');
+  console.log(addBtn);
   $(addBtn).on('click', function() {
     // Obteniendo contenido textutal de los id en localStorage
     // localStorage.moviePoster = $('#movie-poster').text();
@@ -29,10 +30,13 @@ function addToWatchList() {
 function addToHistory() {
   // Variable del ícono para agregar a lista de películas ya vistas
   var historyBtn = $('#btn-history');
+  console.log(historyBtn);
 }
 
 function shareMovie() {
   // Variable del ícono para compartir películas
   var shareBtn = $('#btn-share');
+  console.log(shareBtn);
 }
+
 $(document).ready(begin);
