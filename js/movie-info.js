@@ -1,7 +1,8 @@
 function begin() {
   addToWatchList();
   addToHistory();
-  likeAndDislike();
+  likeRating();
+  // dislikeRating();
 }
 
 /* FUNCIÓN QUE AÑADE PELÍCULAS A PESTAÑA WATCHLIST */
@@ -58,10 +59,29 @@ function addToHistory() {
 }
 
 /* FUNCIÓN PARA DAR LIKE Y QUITAR LIKE */
-function likeAndDislike() {
+function likeRating() {
   // Variable del ícono para compartir películas
-  var likeBtn = $('#btn-share');
-  // console.log(likeBtn);
+  var likeBtn = $('#thumb-up');
+  console.log(likeBtn);
+  $(likeBtn).on('click', function() {
+    likeBtn.addClass('hand-color');
+  });
 }
+
+
+function likeToggle(x) {
+  x.classList.toggle('fa-thumbs-down');
+}
+
+// function dislikeRating() {
+//   // Variable del ícono para compartir películas
+//   var unlikeBtn = $('#thumb-up');
+//   console.log(unlikeBtn);
+//   $(unlikeBtn).on('click', function() {
+//     if ($(unlikeBtn).hasClass('hand-color')) {
+//       $(unlikeBtn).removeClass('hand-color').addClass('hand');
+//     }
+//   });
+// }
 
 $(document).ready(begin);

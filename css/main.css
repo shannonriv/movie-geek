@@ -160,9 +160,13 @@ a.btn-add:hover, a.btn-history:hover, a.btn-thumb-up:hover {
   color: var(--dark-geek);
 }
 
-.hand-color:hover {
-  background: rgb(177, 42, 38);
+.hand-color {
+  color: rgb(177, 42, 38);
 }
+
+/* .hand {
+  color: #ffff;
+} */
 
 .main-poster figure {
   margin: 0;
