@@ -175,7 +175,13 @@ a.btn-add:hover, a.btn-share:hover, a.btn-history:hover {
 /* Carrusel */
 
 .car-img {
-  height: 85vh;
+  height: 90vh;
+}
+
+@media (max-width: 992px) {
+  .car-img {
+    height: 85vh;
+  }
 }
 
 /* Perfil de usuario*/
