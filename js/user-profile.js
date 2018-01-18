@@ -33,22 +33,22 @@ function printMovieInfoHistory() {
 /* FUNCIÓN PARA ELIMINAR UNA PELÍCULA DE WATCHLIST */
 function deleteMovieWatchList() {
   // Obtener elementos de ícono de tacho de basura y caja envolvente de información de película en Watchlist
-  var trashBinWatchList = $('#trash-icon-wrapper-watchlist');
+  var trashBinWatchList = $('.trash-icon-wrapper-watchlist');
   var movieInfoWrapperWatchlist = ('#movie-info-wrapper-watchlist');
   // evento de clic para eliminar la caja envolvente de unformación de película en Watchlist
   $(trashBinWatchList).on('click', function() {
-    $(movieInfoWrapperWatchlist).remove();
+    $(this).parent().parent().parent().remove();
   });
 }
 
 /* FUNCIÓN PARA ELIMINAR UNA PELÍCULA DE HISTORY */
 function deleteMovieHistory() {
   // Obtener elementos de ícono de tacho de basura y caja envolvente de información de película en History
-  var trashBinHistory = $('#trash-icon-wrapper-history');
+  var trashBinHistory = $('.trash-icon-wrapper-history');
   var movieInfoWrapperHistory = ('#movie-info-wrapper-history');
   // evento de clic para eliminar la caja envolvente de unformación de película en Watchlist
   $(trashBinHistory).on('click', function() {
-    $(movieInfoWrapperHistory).remove();
+    $(this).parent().parent().parent().remove();
   });
 }
 
