@@ -10,8 +10,8 @@ function addToWatchList() {
   console.log(addBtn);
   $(addBtn).on('click', function() {
     // Obteniendo contenido textual de los id en localStorage
-    localStorage.moviePoster = $('#movie-poster').attr('src');
-    console.log(localStorage.moviePoster);
+    localStorage.moviePosterWatchList = $('#movie-poster').attr('src');
+    console.log(localStorage.moviePosterWatchList);
     localStorage.movieTitleWatchList = $('#movie-title').text();
     localStorage.movieDurationWatchList = $('#movie-duration').text();
     localStorage.releaseYearWatchList = $('#release-year').text();
@@ -36,7 +36,7 @@ function addToHistory() {
   console.log(historyBtn);
   $(historyBtn).on('click', function() {
     // Obteniendo contenido textual de los id en localStorage
-    // localStorage.moviePoster = $('#movie-poster').text();
+    localStorage.moviePosterHistory = $('#movie-poster').attr('src');
     localStorage.movieTitleHistory = $('#movie-title').text();
     localStorage.movieDurationHistory = $('#movie-duration').text();
     localStorage.releaseYearHistory = $('#release-year').text();

@@ -15,7 +15,7 @@ function printMovieInfoWatchList() {
   // Agregar información a ubicaciones en elementos
   movieTitleWatchList.text(localStorage.movieTitleWatchList);
   moviePlotWatchList.text(localStorage.plotContentWatchList);
-  moviePosterWatchlist.attr('src', localStorage.moviePoster);
+  moviePosterWatchlist.attr('src', localStorage.moviePosterWatchList);
 }
 
 /* FUNCIÓN PARA IMPRIMIR LA LISTA DE PELÍCULAS EN HISTORY*/
@@ -23,9 +23,11 @@ function printMovieInfoHistory() {
   // Obtener elementos
   var movieTitleHistory = $('#movie-title-history');
   var moviePlotHistory = $('#movie-plot-history');
+  var moviePosterHistory = $('#movie-poster-history');
   // Agregar información a ubicaciones en elementos
   movieTitleHistory.text(localStorage.movieTitleHistory);
   moviePlotHistory.text(localStorage.plotContentHistory);
+  moviePosterHistory.attr('src', localStorage.moviePosterHistory);
 }
 
 /* FUNCIÓN PARA ELIMINAR UNA PELÍCULA DE WATCHLIST */
