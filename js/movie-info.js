@@ -10,7 +10,7 @@ function addToWatchList() {
   console.log(addBtn);
   $(addBtn).on('click', function() {
     // Obteniendo contenido textual de los id en localStorage
-    // localStorage.moviePoster = $('#movie-poster').data('src', '');
+    localStorage.moviePoster = $('#movie-poster').attr('src');
     console.log(localStorage.moviePoster);
     localStorage.movieTitleWatchList = $('#movie-title').text();
     localStorage.movieDurationWatchList = $('#movie-duration').text();

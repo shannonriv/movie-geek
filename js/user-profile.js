@@ -10,9 +10,12 @@ function printMovieInfoWatchList() {
   // Obtener elementos
   var movieTitleWatchList = $('#movie-title-watchlist');
   var moviePlotWatchList = $('#movie-plot-watchlist');
+  var moviePosterWatchlist =
+  $('#movie-poster-watchlist');
   // Agregar información a ubicaciones en elementos
   movieTitleWatchList.text(localStorage.movieTitleWatchList);
   moviePlotWatchList.text(localStorage.plotContentWatchList);
+  moviePosterWatchlist.attr('src', localStorage.moviePoster);
 }
 
 /* FUNCIÓN PARA IMPRIMIR LA LISTA DE PELÍCULAS EN HISTORY*/
