@@ -10,7 +10,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
   <!-- Estilos del proyecto -->
-  <link rel="stylesheet" href="../css/main.css">  
+  <link rel="stylesheet" href="../css/main.css">
   <title>Geek Movie</title>
 </head>
 <body>
@@ -46,7 +46,7 @@
       <div class="col-12 col-lg-3 user-profile-panel">
         <figure class="col-6 offset-3">
           <img src="../assets/images/user-avatar.svg" alt="user-avatar" class="img-fluid border border-secondary rounded-circle">
-          <figcaption id="user-name" class="text-center">User name</figcaption>
+          <figcaption class="text-center" id="user-name">User name</figcaption>
         </figure>
       </div>
       <!-- Sección de pestañas -->
@@ -67,21 +67,21 @@
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="watchlist" role="tabpanel" aria-labelledby="watchlist-tab" data-toggle="tooltip" data-placement="top" title="Películas por ver">
             <!-- Caja envoltora de la información de la película -->
-            <div class="box-shadow d-flex p-2" id="movie-info-wrapper">
+            <div class="box-shadow d-flex p-2" id="movie-info-wrapper-watchlist">
               <div class="row no-gutters">
                 <div class="col-3">
                   <figure>
-                    <img src="" alt="movie-poster" id="movie-poster">
+                    <img src="" alt="movie-poster" id="movie-poster-watchlist">
                   </figure>
                 </div>
                 <div class="col-8">
                   <div class="p-2">
-                    <h5 class="title-movie">Título de la película</h5>
-                    <p class="" id="movie-plot">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h5 class="title-movie" id="movie-title-watchlist"></h5>
+                    <p class="" id="movie-plot-watchlist"></p>
                   </div>
                 </div>
                 <div class="col-1">
-                  <div class="p-2 text-center" id="icon-wrapper">
+                  <div class="p-2 text-center" id="trash-icon-wrapper-watchlist">
                     <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
                   </div>
                 </div>
@@ -89,7 +89,27 @@
             </div>
           </div>
           <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab" data-toggle="tooltip" data-placement="top" title="Películas vistas">
-            <p>Lista de películas que ya se vieron</p>
+            <!-- Caja envoltora de la información de la película -->
+            <div class="box-shadow d-flex p-2" id="movie-info-wrapper-history">
+              <div class="row no-gutters">
+                <div class="col-3">
+                  <figure>
+                    <img src="" alt="movie-poster" id="movie-poster-history">
+                  </figure>
+                </div>
+                <div class="col-8">
+                  <div class="p-2">
+                    <h5 class="title-movie" id="movie-title-history"></h5>
+                    <p class="" id="movie-plot-history"></p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="p-2 text-center" id="trash-icon-wrapper-history">
+                    <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="tab-pane fade" id="recommendations" role="tabpanel" aria-labelledby="recommendations-tab" data-toggle="tooltip" data-placement="top" title="Películas recomendadas">
             <p>Lista de películas que se recomiendan ver</p>
