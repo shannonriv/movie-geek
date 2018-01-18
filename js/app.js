@@ -16,6 +16,7 @@ $(document).ready(function() {
   var $loginEmail = $('#login-email');
   var $loginPassword = $('#login-password');
   var $loginBtn = $('#login-btn');
+  var $signOut = $('#signout-btn');
 
   // Login con email
   $loginBtn.click(function(event) {
@@ -23,6 +24,8 @@ $(document).ready(function() {
 
     var $email = $loginEmail.val();
     var $password = $loginPassword.val();
+
+    var $displayName = $('.display-name');
    
     firebase.auth().signInWithEmailAndPassword($email, $password)
       .catch(function(error) {
@@ -82,7 +85,7 @@ $(document).ready(function() {
       var emailVerified = user.emailVerified;
       var uid = user.uid;
       console.log(user);
-      // $username.text(name);
+      $displayName.text(name);
       // $userEmail.text(email);
       // $profilePhoto.attr('src', photoUrl);
     } else {
@@ -91,13 +94,13 @@ $(document).ready(function() {
   });
 
   // Cerrar sesión
-  // $signOut.click(function() {
-  //   firebase.auth().signOut().then(function() {
-  //     // Sign-out successful.
-  //     console.log('Cerrando sesión...');
-  //     $(location).attr('href', 'login.html');
-  //   }).catch(function(error) {
-  //     // An error happened.
-  //   });
-  // });
+  $signOut.click(function() {
+    firebase.auth().signOut().then(function() {
+      // Sign-out successful.
+      console.log('Cerrando sesión...');
+      $(location).attr('href', 'login.html');
+    }).catch(function(error) {
+      // An error happened.
+    });
+  });
 });
