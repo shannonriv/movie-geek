@@ -135,7 +135,7 @@ h6 {
 }
 
 a.btn-add, a.btn-history, a.btn-thumb-up {
-  background: linear-gradient(-100deg, #F59C98, rgb(252, 187, 186)); 
+  background: linear-gradient(-100deg, #F59C98, rgb(252, 187, 186));
   border-radius: 50%;
   color: #ffff;
   padding: 3px 10px;
@@ -146,9 +146,13 @@ a.btn-add:hover, a.btn-history:hover, a.btn-thumb-up:hover {
   color: var(--dark-geek);
 }
 
-.hand-color:hover {
-  background: rgb(177, 42, 38);
+.hand-color {
+  color: rgb(177, 42, 38);
 }
+
+/* .hand {
+  color: #ffff;
+} */
 
 .main-poster figure {
   margin: 0;
@@ -241,7 +245,7 @@ li:active {
 
   .user-profile-panel {
     border: 1px solid rgb(204, 202, 202);
-    border-radius: 5px;    
+    border-radius: 5px;
     margin-top: 1rem;
     height: 80vh;
   }
@@ -257,4 +261,3 @@ footer {
 footer a {
   color: #ffff;
 }
-
