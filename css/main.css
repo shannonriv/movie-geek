@@ -93,7 +93,7 @@ a:hover {
 
 /* Search */
 
-.navbar {
+.navbar, footer {
   background: linear-gradient(-90deg, #505C67, rgb(144, 156, 177));
   color: #ffff;
 }
@@ -239,3 +239,15 @@ li:active {
     height: 80vh;
   }
 }
+
+/* Footer */
+
+footer {
+  margin-top: 15px;
+  padding: 10px;
+}
+
+footer a {
+  color: #ffff;
+}
+
