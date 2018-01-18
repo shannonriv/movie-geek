@@ -1,9 +1,10 @@
 function begin() {
   addToWatchList();
   addToHistory();
-  shareMovie();
+  likeAndDislike();
 }
 
+/* FUNCIÓN QUE AÑADE PELÍCULAS A PESTAÑA WATCHLIST */
 function addToWatchList() {
   // Variable del ícono para agregar a lista de películas por ver luego
   var addBtn = $('#btn-add');
@@ -30,6 +31,7 @@ function addToWatchList() {
   });
 }
 
+/* FUNCIÓN QUE AÑADE PELÍCULAS A PESTAÑA HISTORY */
 function addToHistory() {
   // Variable del ícono para agregar a lista de películas ya vistas
   var historyBtn = $('#btn-history');
@@ -55,10 +57,11 @@ function addToHistory() {
   });
 }
 
-function shareMovie() {
+/* FUNCIÓN PARA DAR LIKE Y QUITAR LIKE */
+function likeAndDislike() {
   // Variable del ícono para compartir películas
-  var shareBtn = $('#btn-share');
-  console.log(shareBtn);
+  var likeBtn = $('#btn-share');
+  // console.log(likeBtn);
 }
 
 $(document).ready(begin);

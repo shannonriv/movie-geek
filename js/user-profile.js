@@ -52,4 +52,7 @@ function deleteMovieHistory() {
   });
 }
 
+/* FUNCIÓN PARA IMPRIMIR CAJAS ENVOLVENTES CON INFORMACIÓN DE PELÍCULA */
+
+ 
 $(document).ready(begin);
