@@ -82,28 +82,27 @@
   </div>
   <div class="container" id="search">
     <div class="row no-gutters">
-      <div class="col">
-        <input id="titleFld" type="text" class="form-control" placeholder="busca tu película">
+      <div class="container">
+        <div class="row margin">
+          <div class="col">
+            <input id="titleFld" type="text" class="form-control" placeholder="busca tu película">
+          </div>
+          <div class="col">
+            <button id="searchBtn" type="button" class="btn btn-primary btn-block">Search</button>
+          </div>
+        </div>
       </div>
-      <div class="col">
-        <button id="searchBtn" type="button" class="btn btn-primary btn-block">Search</button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <ul id="movieList" class="list-group">
-          <li class="list">The Movie</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <a href="#search" class="btn-up pull-right"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+      <div id="movieList"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <a href="#search" class="btn-up pull-right"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
   <footer>
     <div class="container">
       <div class="row text-center">
@@ -119,6 +118,7 @@
     </div>
   </footer>
 
+  
 
  <!-- jQuery -->
  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

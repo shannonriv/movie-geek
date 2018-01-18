@@ -41,14 +41,14 @@ $(document).ready(function() {
         .then(function(response) {
           if ((response.Genre.indexOf('Sci-Fi') !== -1 || response.Genre.indexOf('Adventure') !== -1 || response.Genre.indexOf('Fantasy') !== -1) && response.Genre.indexOf('Animation') === -1) {
             console.log(response);
-            var li = $('<li class="list" id="' + response.imdbID + '">');
-            var img = $('<img src="' + response.Poster + '" with="50px">');
-            var title = $('<p>' + response.Title + '</p>');
-            var runtime = $('<p>' + response.Runtime + '</p>');
-            var director = $('<p>' + response.Director + '</p>');
-            var tag = $('<p>' + response.Genre + '</p>');
-            var plot = $('<p>' + response.Plot + '</p>');
-            var actors = $('<p>' + response.Actors + '</p>');
+            var li = $('<div class="list rounded mx-auto d-block col col-sm-4 col-md-4" id="' + response.imdbID + '">');
+            var img = $('<img class="rounded mx-auto d-block" src="' + response.Poster + '" with="50px">');
+            var title = $('<p> Title: ' + response.Title + '</p>');
+            var runtime = $('<p>Runtime: ' + response.Runtime + '</p>');
+            var director = $('<p>Director: ' + response.Director + '</p>');
+            var tag = $('<p>Genre: ' + response.Genre + '</p>');
+            var plot = $('<p>Plot: ' + response.Plot + '</p>');
+            var actors = $('<p>Actors: ' + response.Actors + '</p>');
 
             li.append(img);
             li.append(title);
