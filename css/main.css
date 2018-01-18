@@ -110,62 +110,42 @@ a:hover {
 
 /* Movie Info */
 
-.banner-movie {
-  background-image: url('../assets/images/wwmovie.jpg');
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 150px;
-  padding: 15px;
+h6 {
+  font-weight: 700;
 }
 
-a.btn-back, a.btn-add {
-  background-color: #fbfbfd96;
-  border-radius: 50%;
-  color: black;
-  padding: 3px 10px;
+.mrgn-bottom {
+  margin-bottom: .5rem;
+}
+
+.mrgn {
+  margin: 5px 0;
 }
 
 a.btn-add, a.btn-share, a.btn-history {
-  color: rgb(167, 166, 166);
   padding: 3px 10px;
 }
 
 a.btn-add:hover, a.btn-share:hover, a.btn-history:hover {
   background-color: transparent;
-  border: 1px solid rgb(167, 166, 166);
-  border-radius: 50%;
-  color: rgb(167, 166, 166);
+  color: var(--dark-geek);
 }
 
-.btn-back i, .btn-add i, .btn-share i, .btn-history i {
-  font-size: .8rem;
-  font-weight: lighter;
-  margin-top: .6rem;
-}
-
-.main-poster {
-  border: 1px solid #987ae4;
-  background-color: #e7deec;
-  border-radius: 10px;
-  height: 150px;
-  margin-top: 10px;
+.main-poster figure {
+  margin: 0;
 }
 
 .title-movie {
-  color: initial;
   font-weight: 700;
-  padding-top: 10px;
 }
 
 .gray {
   color: rgb(167, 166, 166);
 }
 
-.movie-duration, .release-year-movie, .movie-director, .tag-movie {
+.movie-duration, .movie-director, .tag-movie {
   font-size: .8rem;
   margin-bottom: .3rem;
-  padding-bottom: 3px;
 }
 
 .tag-movie {
@@ -176,19 +156,8 @@ a.btn-add:hover, a.btn-share:hover, a.btn-history:hover {
   text-align: center;
 }
 
-h6 {
-  font-weight: 700;
-}
-
-.actor-movie {
-  border: 1px solid #987ae4;
-  background-color: #e7deec;
-  border-radius: 10px;
-  height: 150px;
-}
-
 .sinopsis-movie, .cast-movie {
-  padding: 20px;
+  padding: 20px 20px 0;
 }
 
 .actors span {
@@ -197,7 +166,14 @@ h6 {
   padding: 0 5px;
 }
 
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  .main-poster{
+    height: 30vh;
+  }
+}
+
 /* Carrusel */
+
 .car-img {
   height: 85vh;
 }
@@ -244,9 +220,4 @@ li:active {
     margin-top: 1rem;
     height: 80vh;
   }
-/* #myTab, #myTabContent {
-    position: relative;
-    left: 8%;
-    max-width: 700px;
-  } */
 }

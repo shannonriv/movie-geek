@@ -14,35 +14,58 @@
   <title>Geek Movie</title>
 </head>
 <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img class="logo-nav" src="../assets/images/001-glasses.svg" alt="logo">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mi historial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Recomendadas</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerrar Sesión</button>
+        </form>
+      </div>
+    </nav>
+  </header>
   <div class="container">
-    <div class="row">
-      <div class="col-12 banner-movie">
-        <a href="#" class="btn-back"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+    <div class="row mrgn">
+      <div class="col-12">
+        <a href="#" class="btn-back"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
       </div>
     </div>
-    <div class="row">
-      <div class="col-4">
-        <div class="main-poster"></div>
+    <div class="row justify-content-center">
+      <div class="col-10 col-lg-3 offset-lg-1 main-poster mrgn-bottom">
+        <figure>
+          <img src="../assets/images/wwmovie.jpg" alt="" class="img-fluid">
+        </figure>
       </div>
-      <div class="col-8 gray">
+      <div class="col-10 col-lg-7">
         <h5 class="title-movie">Movie Title</h5>
-        <p class="movie-duration"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span> 2h 5min</p>
-        <div class="row">
-          <div class="col">
-            <div class="release-year-movie"><i class="fa fa-calendar-o" aria-hidden="true"></i> 15/05/2017</div>              
-          </div>
-          <div class="col">
-            <div class="movie-director"><i class="fa fa-video-camera" aria-hidden="true"></i> Patty Jenkins</div>              
-          </div>
+        <div class="row align-items-center mrgn-bottom">
+          <div class="col-6 col-lg-4 movie-duration"><i class="fa fa-clock-o" aria-hidden="true"></i> 2h 5min</div>
+          <div class="col-6 col-lg-4 movie-director"><i class="fa fa-film" aria-hidden="true"></i> Patty Jenkins</div>          
         </div>
-        <div class="row">
+        <div class="row align-items-center mrgn-bottom">
           <div class="col">
             <div class="tag-movie">SCI-FI</div>
             <div class="tag-movie">SUPERHEROES</div>
             <div class="tag-movie">FICTION</div>
           </div>
         </div>
-        <div class="row">
+        <div class="row align-items-center mrgn-bottom">
           <div class="col">
             <a href="#" class="btn-add"><i class="fa fa-plus" aria-hidden="true"></i></a>          
             <a href="#" class="btn-history"><i class="fa fa-check" aria-hidden="true"></i></a>            
@@ -50,15 +73,11 @@
           </div> 
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col sinopsis-movie">
+      <div class="col-10 col-lg-10 offset-lg-1 sinopsis-movie">
         <h6>Plot</h6>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quos nobis adipisci odit a, cupiditate accusantium qui voluptates expedita voluptatem recusandae saepe aliquam eveniet dolor veniam voluptate provident? Voluptates, minus!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum beatae natus ex aperiam nobis veritatis culpa hic praesentium provident reprehenderit magni earum eius quisquam dignissimos quia, voluptatem assumenda tempora qui.</p>
       </div>
-    </div>
-    <div class="row">
-      <div class="col cast-movie">
+      <div class="col-10 col-lg-10 offset-lg-1 cast-movie">
         <h6>Cast</h6>
         <div class="actors">
           <span>Franco Antonio</span>
@@ -67,9 +86,9 @@
           <span>Ken</span>
           <span>Lucas</span>
         </div>
+      </div>
     </div>
   </div>
-
 
   
 
