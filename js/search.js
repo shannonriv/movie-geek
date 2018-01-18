@@ -4,7 +4,7 @@ $(document).ready(function() {
   var searchBtn = $('#searchBtn');
   var movieList = $('#movieList');
   var arrResults = [];
-  
+
   // Asociando eventos
   searchBtn.click(handleSearchBtn);
 
@@ -34,16 +34,30 @@ $(document).ready(function() {
 
     console.log(arrResults);
 
+
+
     for (var i = 0; i < arrResults.length; i++) {
       $.getJSON('http://www.omdbapi.com/?&apikey=3a181f1c&i=' + arrResults[i])
         .then(function(response) {
           if ((response.Genre.indexOf('Sci-Fi') !== -1 || response.Genre.indexOf('Adventure') !== -1 || response.Genre.indexOf('Fantasy') !== -1) && response.Genre.indexOf('Animation') === -1) {
             console.log(response);
-            var li = $('<li class="list-group-item">');
-            var img = $('<img src="' + response.Poster + '" with="50px">');   
+            var li = $('<li class="list" id="' + response.imdbID + '">');
+            var img = $('<img src="' + response.Poster + '" with="50px">');
+            var title = $('<p>' + response.Title + '</p>');
+            var runtime = $('<p>' + response.Runtime + '</p>');
+            var director = $('<p>' + response.Director + '</p>');
+            var tag = $('<p>' + response.Genre + '</p>');
+            var plot = $('<p>' + response.Plot + '</p>');
+            var actors = $('<p>' + response.Actors + '</p>');
+
             li.append(img);
-            li.append(response.Title);
-            movieList.append(li);           
+            li.append(title);
+            li.append(runtime);
+            li.append(director);
+            li.append(tag);
+            li.append(plot);
+            li.append(actors);
+            movieList.append(li);
           }
         });
     }
