@@ -18,6 +18,9 @@ $(document).ready(function() {
   var $loginBtn = $('#login-btn');
   var $signOut = $('#signout-btn');
 
+  var $displayUsername = $('.display-username');
+  var $profilePhoto = $('#profile-photo');  
+
   // Login con email
   $loginBtn.click(function(event) {
     event.preventDefault();
@@ -25,8 +28,6 @@ $(document).ready(function() {
     var $email = $loginEmail.val();
     var $password = $loginPassword.val();
 
-    var $displayName = $('.display-name');
-   
     firebase.auth().signInWithEmailAndPassword($email, $password)
       .catch(function(error) {
         // Handle Errors here.
@@ -85,7 +86,8 @@ $(document).ready(function() {
       var emailVerified = user.emailVerified;
       var uid = user.uid;
       console.log(user);
-      $displayName.text(name);
+
+      $displayUsername.text(name);
       // $userEmail.text(email);
       // $profilePhoto.attr('src', photoUrl);
     } else {
@@ -94,7 +96,8 @@ $(document).ready(function() {
   });
 
   // Cerrar sesión
-  $signOut.click(function() {
+  $signOut.click(function(event) {
+    event.preventDefault();
     firebase.auth().signOut().then(function() {
       // Sign-out successful.
       console.log('Cerrando sesión...');
