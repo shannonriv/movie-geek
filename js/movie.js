@@ -29,7 +29,7 @@ $(document).ready(function() {
     }
 
     for (var i = 0; i < arrGenre.length; i++) {
-      $('.movie-tags').append('<span class="d-inline-block mr-2 mb-2 tag text-uppercase">' + arrGenre[i] + '</span>');
+      $('.movie-tags').append('<span class="d-inline-block px-1 mr-2 mb-2 tag text-uppercase">' + arrGenre[i] + '</span>');
     }
   }
 });
