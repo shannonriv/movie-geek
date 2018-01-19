@@ -103,7 +103,7 @@ Unificar estilos -> Shannon
 * Katherine Lévano
 * Shannon Rivera
 
-### Resultado:
+### Flujo de la aplicación:
 
 ![Sin titulo](assets/docs/vista-login.png)
 
