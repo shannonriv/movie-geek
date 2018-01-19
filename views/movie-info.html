@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
   <!-- Estilos del proyecto -->
   <link rel="stylesheet" href="../css/main.css">
-  <title>Geek Movie</title>
+  <title>Movie Geek</title>
 </head>
 
 <body>
@@ -58,24 +58,19 @@
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-10 col-lg-3 offset-lg-1 main-poster mb-2">
+      <div class="col-10 col-lg-3 offset-lg-1 text-center mb-2">
         <figure>
           <img src="../assets/images/wwmovie.jpg" alt="" class="img-fluid" id="movie-poster">
         </figure>
       </div>
       <div class="col-10 col-lg-7">
-        <h5 class="title-movie" id="movie-title">Movie Title</h5>
-        <div class="row align-items-center mb-2">
-          <div class="col-6 col-lg-4 movie-duration" id="movie-duration">
-            <i class="fa fa-clock-o" aria-hidden="true"></i> 2h 5min</div>
-          <div class="col-6 col-lg-4 movie-director" id="movie-director">
-            <i class="fa fa-film" aria-hidden="true"></i> Patty Jenkins</div>
+        <h5 class="title-movie text-center text-lg-left" id="movie-title">Movie Title</h5>
+        <div class="row align-items-center my-3">
+          <div class="col-6 col-md-3 col-lg-4 movie-duration" id="movie-duration"></div>
+          <div class="col-6 col-md-3 col-lg-4 movie-director" id="movie-director"></div>
         </div>
         <div class="row align-items-center mb-2">
-          <div class="col">
-            <div class="tag-movie" id="movie-tag-1">SCI-FI</div>
-            <div class="tag-movie" id="movie-tag-2">SUPERHEROES</div>
-            <div class="tag-movie" id="movie-tag-3">FICTION</div>
+          <div class="col movie-tags">
           </div>
         </div>
         <div class="row align-items-center mb-2">
@@ -94,19 +89,14 @@
           </div>
         </div>
       </div>
-      <div class="col-10 col-lg-10 offset-lg-1 sinopsis-movie">
+      <div class="col-10 col-lg-10 offset-lg-1 mt-3">
         <h6>Plot</h6>
         <p id="plot-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum beatae natus ex aperiam nobis veritatis culpa hic
           praesentium provident reprehenderit magni earum eius quisquam dignissimos quia, voluptatem assumenda tempora qui.</p>
       </div>
-      <div class="col-10 col-lg-10 offset-lg-1 cast-movie">
+      <div class="col-10 col-lg-10 offset-lg-1 mb-3">
         <h6>Cast</h6>
         <div class="actors">
-          <span id="cast-1">Franco Antonio</span>
-          <span id="cast-2">Maria</span>
-          <span id="cast-3">Julia</span>
-          <span id="cast-4">Ken</span>
-          <span id="cast-5">Lucas</span>
         </div>
       </div>
     </div>
@@ -127,7 +117,7 @@
       </div>
       <div class="row">
         <div class="col text-center">
-          <p class="mrgn">Copyright © 2018</p>
+          <p class="my-2">Copyright © 2018</p>
         </div>
       </div>
     </div>
@@ -141,14 +131,12 @@
   <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
   <!-- Scripts del proyecto -->
   <script src="../js/app.js"></script>
-  <script src="../js/movie-info.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-  </script>
+  <script src="../js/movie.js"></script>
+
   <script type="text/javascript">
     $(function() {
       $('[data-toggle="tooltip"]').tooltip();
     })
-
   </script>
   <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.bundle.min.js">
 
