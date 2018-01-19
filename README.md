@@ -35,7 +35,7 @@ Necesitan un lugar específico donde puedan conseguir el tipo de información qu
 
 #### 6. Diseño UI:
 
-  En este punto definimos la paleta de colores, el diseño de lo botones,  el diseño de los inputs y la tipografía .
+  En este punto definimos el logo, la paleta de colores, el diseño de los botones,  el diseño de los inputs y la tipografía .
 
 ![Sin titulo](assets/docs/diseño.jpg)
 
