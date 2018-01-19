@@ -1,5 +1,5 @@
 function begin() {
-  var trashBinWatchList = $('.trash-icon-wrapper-watchlist');  
+  var trashBinWatchList = $('.trash-icon-wrapper-watchlist');
   var trashBinHistory = $('.trash-icon-wrapper-history');
   var id = '';
   var key = '';
@@ -11,7 +11,7 @@ function begin() {
 
 
   /* FUNCIÓN PARA IMPRIMIR LA LISTA DE PELÍCULAS EN WATCHLIST*/
-  function printMovieInfoWatchList() {  
+  function printMovieInfoWatchList() {
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
         // Referencia a rama de Firebase
@@ -111,7 +111,7 @@ function begin() {
 
   /* FUNCIÓN PARA IMPRIMIR CAJAS ENVOLVENTES CON INFORMACIÓN DE PELÍCULA */
   // function dfg() {
-    
+
   // }
 }
 
