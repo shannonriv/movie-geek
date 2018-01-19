@@ -21,19 +21,19 @@ Necesitan un lugar específico donde puedan conseguir el tipo de información qu
 
   ![Sin titulo](assets/docs/user.jpg)
 
-#### 3. Entrevista a los usuarios: **
+#### 3. Entrevista a los usuarios:
 
-#### 4. Elaboración del sketech: **
+#### 4. Elaboración del sketch:
 
   De acuerdo al perfil del usuario hemos planteado un sketch que tiene un flujo de las vistas a las que este puede acceder.
 
 ![Sin titulo](assets/docs/sketch.jpg)
 
-#### 5. Testeo con el usuario: **
+#### 5. Testeo con el usuario:
 
 
 
-#### 6. Diseño UI: **
+#### 6. Diseño UI:
 
   En este punto definimos la paleta de colores, el diseño de lo botones,  el diseño de los inputs y la tipografía .
 
@@ -92,3 +92,9 @@ Unificar estilos -> Shannon
 * Lizbeth Felix
 * Katherine Lévano
 * Shannon Rivera
+
+### Resultado:
+
+![Sin titulo](assets/docs/vista-1.png)
+
+![Sin titulo](assets/docs/vista-2.png)
