@@ -15,7 +15,7 @@ $(document).ready(function() {
   function handleSearchBtn() {
     var title = inputFld.val();
     console.log(title);
-    var url = 'http://www.omdbapi.com/?&apikey=5bb8748d&s=' + encodeURI(title) + '&type=movie';
+    var url = 'https://www.omdbapi.com/?&apikey=5bb8748d&s=' + encodeURI(title) + '&type=movie';
     $.ajax({
       url: url,
       success: renderMovies,
@@ -38,7 +38,7 @@ $(document).ready(function() {
     console.log(arrResults);
 
     for (var i = 0; i < arrResults.length; i++) {
-      $.getJSON('http://www.omdbapi.com/?&apikey=3a181f1c&i=' + arrResults[i])
+      $.getJSON('https://www.omdbapi.com/?&apikey=3a181f1c&i=' + arrResults[i])
         .then(function(response) {
           if ((response.Genre.indexOf('Sci-Fi') !== -1 || response.Genre.indexOf('Adventure') !== -1 || response.Genre.indexOf('Fantasy') !== -1) && response.Genre.indexOf('Animation') === -1) {
             console.log(response);

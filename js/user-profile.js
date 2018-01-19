@@ -21,7 +21,7 @@ function begin() {
           snapshot.forEach(function(childSnapshot) {
             id = childSnapshot.val().movie;
             // console.log(id);
-            var url = 'http://www.omdbapi.com/?&apikey=3a181f1c&i=' + id;
+            var url = 'https://www.omdbapi.com/?&apikey=3a181f1c&i=' + id;
             $.ajax({
               url: url,
               success: displayWatchlist
@@ -83,7 +83,7 @@ function begin() {
           snapshot.forEach(function(childSnapshot) {
             id = childSnapshot.val().movie;
             // console.log(id);
-            var url = 'http://www.omdbapi.com/?&apikey=3a181f1c&i=' + id;
+            var url = 'https://www.omdbapi.com/?&apikey=3a181f1c&i=' + id;
             $.ajax({
               url: url,
               success: displayHistory

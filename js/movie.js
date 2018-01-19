@@ -15,7 +15,7 @@ $(document).ready(function() {
   historyBtn.on('click', addToHistory);
   likeBtn.on('click', likeRating);
 
-  var url = 'http://www.omdbapi.com/?&apikey=3a181f1c&i=' + localStorage.selectedMovieID;
+  var url = 'https://www.omdbapi.com/?&apikey=3a181f1c&i=' + localStorage.selectedMovieID;
   console.log(url);
   $.ajax({
     url: url,
