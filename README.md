@@ -107,4 +107,4 @@ Unificar estilos -> Shannon
 
 ![Sin titulo](assets/docs/vista-2.png)
 
-![Sin titulo](assets/docs/vista-4.png)
+![Sin titulo](assets/docs/vista-4.PNG)
