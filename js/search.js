@@ -26,23 +26,22 @@ $(document).ready(function() {
 
     console.log(response);
 
-    for (var m in response.Search) {
-      var movie = response.Search[m];
+    for (var i in response.Search) {
+      var movie = response.Search[i];
       var idmovie = movie.imdbID;
       arrResults.push(idmovie);
     }
 
     console.log(arrResults);
 
-
-
     for (var i = 0; i < arrResults.length; i++) {
       $.getJSON('http://www.omdbapi.com/?&apikey=3a181f1c&i=' + arrResults[i])
         .then(function(response) {
           if ((response.Genre.indexOf('Sci-Fi') !== -1 || response.Genre.indexOf('Adventure') !== -1 || response.Genre.indexOf('Fantasy') !== -1) && response.Genre.indexOf('Animation') === -1) {
             console.log(response);
-            var li = $('<div class="list rounded mx-auto d-block col col-sm-4 col-md-4" id="' + response.imdbID + '">');
-            var img = $('<img class="rounded mx-auto d-block" src="' + response.Poster + '" with="50px">');
+            var html = '<div class="mt-3 p-2 box-shadow col-8" id="' + response.imdbID + '"><div class="row"><div class="col-4"></div><div class="col-8"></div></div></div>';
+            var li = $('<div class="rounded mt-3 p-2 box-shadow d-block col-8" id="' + response.imdbID + '">');
+            var img = $('<img class="img-fluid" src="' + response.Poster + '" with="50px"></div>');
             var title = $('<p> Title: ' + response.Title + '</p>');
             var runtime = $('<p>Runtime: ' + response.Runtime + '</p>');
             var director = $('<p>Director: ' + response.Director + '</p>');
