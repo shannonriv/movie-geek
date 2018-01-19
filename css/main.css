@@ -94,6 +94,10 @@ border-bottom: 1px solid #ced4da;
 
 /* Search */
 
+.movie {
+  cursor: pointer;
+}
+
 .navbar, footer {
   background: linear-gradient(-90deg, #505C67, rgb(144, 156, 177));
   color: #ffff;
@@ -166,21 +170,17 @@ a.btn-add:hover, a.btn-history:hover, a.btn-thumb-up:hover {
   color: #a7a6a6;
 }
 
-.movie-duration, .movie-director, .tag-movie {
+.movie-duration, .movie-director {
   font-size: .8rem;
   margin-bottom: .3rem;
 }
 
-.tag-movie {
+.tag {
   border: 1px solid gainsboro;
   border-radius: 3px;
   display: inline-block;
   padding: 3px;
   text-align: center;
-}
-
-.sinopsis-movie, .cast-movie {
-  padding: 20px 20px 0;
 }
 
 .actors span {

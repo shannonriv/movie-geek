@@ -5,8 +5,11 @@ $(document).ready(function() {
   var movieList = $('#movieList');
   var arrResults = [];
 
+  var $movie = $('.movie');
+
   // Asociando eventos
   searchBtn.click(handleSearchBtn);
+  $(document).on('click', $movie, getDetails);
 
   // Función para hacer la busqueda general
   function handleSearchBtn() {
@@ -39,26 +42,34 @@ $(document).ready(function() {
         .then(function(response) {
           if ((response.Genre.indexOf('Sci-Fi') !== -1 || response.Genre.indexOf('Adventure') !== -1 || response.Genre.indexOf('Fantasy') !== -1) && response.Genre.indexOf('Animation') === -1) {
             console.log(response);
-            var html = '<div class="mt-3 p-2 box-shadow col-8" id="' + response.imdbID + '"><div class="row"><div class="col-4"></div><div class="col-8"></div></div></div>';
-            var li = $('<div class="rounded mt-3 p-2 box-shadow d-block col-8" id="' + response.imdbID + '">');
-            var img = $('<img class="img-fluid" src="' + response.Poster + '" with="50px"></div>');
-            var title = $('<p> Title: ' + response.Title + '</p>');
-            var runtime = $('<p>Runtime: ' + response.Runtime + '</p>');
+            var li = $('<li class="d-block mt-3 p-2 box-shadow col-10 offset-1 col-md-8 offset-md-2 movie" id="' + response.imdbID + '"></li>');
+            var movieRow = $('<div class="row"></div>');
+            var img = $('<div class="col-4"><img class="img-fluid" src="' + response.Poster + '"></div>');
+            var info = $('<div class="col-8 info"></div>');
+            var title = $('<h4>' + response.Title + '</h4>');
+            var runtime = $('<p class="d-none d-sm-block">Runtime: ' + response.Runtime + '</p>');
             var director = $('<p>Director: ' + response.Director + '</p>');
-            var tag = $('<p>Genre: ' + response.Genre + '</p>');
-            var plot = $('<p>Plot: ' + response.Plot + '</p>');
-            var actors = $('<p>Actors: ' + response.Actors + '</p>');
+            var tag = $('<p class="d-none d-sm-block">Genre: ' + response.Genre + '</p>');
 
-            li.append(img);
-            li.append(title);
-            li.append(runtime);
-            li.append(director);
-            li.append(tag);
-            li.append(plot);
-            li.append(actors);
+            li.append(movieRow);
+            movieRow.append(img);
+            movieRow.append(info);
+            info.append(title);
+            info.append(runtime);
+            info.append(director);
+            info.append(tag);
             movieList.append(li);
           }
         });
+    }
+  }
+
+  function getDetails(event) {
+    var target = $(event.target).closest('li');
+    if (target.hasClass('movie')) {
+      localStorage.selectedMovieID = target.attr('id');
+      console.log('holi');
+      $(location).attr('href', 'movie-info.html');
     }
   }
 });
