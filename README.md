@@ -1,4 +1,4 @@
-# Hackhathon Challenge: Movie Geek
+# Hackathon Challenge: Movie Geek
 
 **Movie Geek** es una web app que te permite obtener información acerca de películas del genero ciencia ficción, ademas de poder agregar a tus listas las películas que quieres ver en el futuro y aquellas que ya viste.
 
