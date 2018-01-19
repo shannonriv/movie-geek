@@ -89,7 +89,7 @@ $(document).ready(function() {
 
       $displayUsername.text(name);
       // $userEmail.text(email);
-      // $profilePhoto.attr('src', photoUrl);
+      $profilePhoto.attr('src', photoUrl);
     } else {
       // No user is signed in.
     }
