@@ -58,7 +58,7 @@ function addToHistory() {
   });
 }
 
-/* FUNCIÓN PARA DAR LIKE Y QUITAR LIKE */
+/* FUNCIÓN PARA DAR LIKE Y QUITAR LIKE CON COLOR */
 function likeRating() {
   // Variable del ícono para compartir películas
   var likeBtn = $('#thumb-up');
@@ -67,7 +67,6 @@ function likeRating() {
     likeBtn.addClass('hand-color');
   });
 }
-
 
 function likeToggle(x) {
   x.classList.toggle('fa-thumbs-down');
@@ -83,5 +82,6 @@ function likeToggle(x) {
 //     }
 //   });
 // }
+
 
 $(document).ready(begin);

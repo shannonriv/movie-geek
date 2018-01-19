@@ -54,5 +54,19 @@ function deleteMovieHistory() {
 
 /* FUNCIÓN PARA IMPRIMIR CAJAS ENVOLVENTES CON INFORMACIÓN DE PELÍCULA */
 
- 
+
+// Initialize Firebase
+var config = {
+  apiKey: 'AIzaSyC3hqRINXbqnNd0V5orGP-say7b414Gems',
+  authDomain: 'movie-geek-8b595.firebaseapp.com',
+  databaseURL: 'https://movie-geek-8b595.firebaseio.com',
+  projectId: 'movie-geek-8b595',
+  storageBucket: 'movie-geek-8b595.appspot.com',
+  messagingSenderId: '535112578744'
+};
+/* FIREBASE */
+// Referencia
+// firebase.database().ref('users/' + user.uid + 'watchList');
+// set/push
+
 $(document).ready(begin);
