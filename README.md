@@ -51,6 +51,8 @@ Para desarrollar el producto seguimos el siguiente flujo de trabajo:
 
 Para elaborar el producto las tareas fueron distribuidas de la siguiente manera:
 
+![Sin titulo](assets/docs/organización-trello.JPG)
+
 #### Primera sesión:
 
 En la primera sesión nos distribuimos las maquetación de las vistas del producto.
