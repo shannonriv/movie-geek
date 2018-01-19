@@ -13,7 +13,7 @@
     crossorigin="anonymous">
   <!-- Estilos del proyecto -->
   <link rel="stylesheet" href="../css/main.css">
-  <title>Inicia sesión</title>
+  <title>Log in</title>
 </head>
 
 <body>
@@ -41,31 +41,24 @@
                 <label for="password" class="sr-only"></label>
                 <input type="password" id="login-password" class="form-control geek-input rounded-corners" placeholder="Password">
                 <small id="login-help" class="form-text text-center mt-2 d-none">
-                  Correo y/o contraseña incorrectos. Inténtalo nuevamente.
+                  Incorrect email or password. Try again.
                 </small>
               </div>
               <div class="form-group col-8 offset-2 col-md-6 offset-md-3">
                 <button id="login-btn" class="btn btn-geek form-control rounded-corners">Log in</button>
               </div>
-            </div>
-            <!-- Inicio con redes sociales -->
-            <small class="d-block text-center my-3">O si prefieres...</small>
-            <div class="form-row">
-              <div class="form-group col-6">
-                <button type="button" id="fb-login" class="btn btn-primary icon-btn rounded-corners float-right">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </button>
-              </div>
-              <div class="form-group col-6">
-                <button type="button" id="google-login" class="btn btn-danger icon-btn rounded-corners">
-                  <i class="fa fa-google" aria-hidden="true"></i>
+              <!-- Inicio con redes sociales -->
+              <small class="col-12 text-center my-2">Or else...</small>              
+              <div class="form-group col-8 offset-2 col-md-6 offset-md-3">
+                <button type="button" id="google-login" class="btn form-control rounded-corners">
+                  <i class="fa fa-google" aria-hidden="true"></i> Log in with Google
                 </button>
               </div>
             </div>
           </form>
           <!-- Ir a la vista register -->
-          <p class="text-center">¿No estás registrado?
-            <a href="register.html">Crea una cuenta.</a>
+          <p class="text-center">Don't have an account?
+            <a href="register.html">Register.</a>
           </p>
         </div>
       </div>
