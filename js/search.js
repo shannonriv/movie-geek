@@ -18,7 +18,7 @@ $(document).ready(function() {
     var url = 'http://www.omdbapi.com/?&apikey=5bb8748d&s=' + encodeURI(title) + '&type=movie';
     $.ajax({
       url: url,
-      success: renderMovies
+      success: renderMovies,
     });
   };
 
@@ -44,7 +44,12 @@ $(document).ready(function() {
             console.log(response);
             var li = $('<li class="d-block mt-3 p-2 box-shadow col-10 offset-1 col-md-8 offset-md-2 movie" id="' + response.imdbID + '"></li>');
             var movieRow = $('<div class="row"></div>');
-            var img = $('<div class="col-4"><img class="img-fluid" src="' + response.Poster + '"></div>');
+            var img = '';
+            if (response.Poster !== 'N/A') {
+              img = $('<div class="col-4"><img class="img-fluid" src="' + response.Poster + '"></div>');
+            } else {
+              img = $('<div class="col-4"><img class="img-fluid" src="../assets/images/not-picture.svg"></div>');
+            }
             var info = $('<div class="col-8 info"></div>');
             var title = $('<h4>' + response.Title + '</h4>');
             var runtime = $('<p class="d-none d-sm-block">Runtime: ' + response.Runtime + '</p>');
@@ -59,6 +64,8 @@ $(document).ready(function() {
             info.append(director);
             info.append(tag);
             movieList.append(li);
+          } else if (arrResults.length === 0) {
+            movieList.append('li').addClass('p-3').text('Oops... we did not find that. Try again');
           }
         });
     }
