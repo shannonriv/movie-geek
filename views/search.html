@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <!-- Fuentes -->
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
- <link href="https://fonts.googleapis.com/css?family=Nunito:300" rel="stylesheet">
- <!-- Bootstrap CSS -->
- <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
- <!-- Estilos del proyecto -->
- <link rel="stylesheet" href="../css/main.css">
- <title>Geek Movie</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Fuentes -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+  <!-- Estilos del proyecto -->
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Movie Geek</title>
 </head>
-<body>
+
+<body class="min100vh d-flex flex-column">
   <header>
     <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="#">
-        <img class="logo-nav" src="../assets/images/001-glasses.svg" alt="logo">
+        <img class="logo-nav" src="../assets/images/moviegeek-logo.svg" alt="logo">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon py-1">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </span>
       </button>
       <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="../views/user-profile.html">Profile</a>
+          <li class="nav-item nav-link">Hola,
+            <span class="display-username">Usuario</span>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="../views/user-profile.html#history-tab">History</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="../views/search.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../views/user-profile.html#recommendations-tab">Recommendations</a>
-          </li> -->
+            <a class="nav-link" href="../views/search.html">Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../views/user-profile.html">Profile</a>
+          </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <button class="btn btn-log-out my-2 my-sm-0 mx-auto" type="submit">Log out</button>
+          <button id="signout-btn" class="btn btn-log-out rounded-corners my-2 my-sm-0 mx-auto" type="submit">Log out</button>
         </form>
       </div>
     </nav>
@@ -53,22 +61,19 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100 car-img" src="../assets/images/avengers.jpeg" alt="First slide">
+        <img class="d-block w-100 car-img" src="../assets/images/avengers-slider.jpeg" alt="First slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100 car-img" src="../assets/images/planet-of-the-apes.jpg" alt="Second slide">
+        <img class="d-block w-100 car-img" src="../assets/images/star-wars-slider.jpg" alt="Third slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100 car-img" src="../assets/images/star-wars.jpg" alt="Third slide">
+        <img class="d-block w-100 car-img" src="../assets/images/et-poster-slider.jpeg" alt="Fourth slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100 car-img" src="../assets/images/ET.png" alt="Fourth slide">
+        <img class="d-block w-100 car-img" src="../assets/images/justice-slider.jpeg" alt="Fifth slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100 car-img" src="../assets/images/justice-league.jpg" alt="Fifth slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100 car-img" src="../assets/images/back-to-the-future.jpg" alt="Sixth slide">
+        <img class="d-block w-100 car-img" src="../assets/images/back-to-the-future-slider.jpeg" alt="Sixth slide">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -80,23 +85,22 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <div class="container" id="search">
-    <div class="row no-gutters">
-      <div class="container">
-        <div class="row margin">
-          <div class="col">
-            <input id="titleFld" type="text" class="form-control" placeholder="busca tu película">
-          </div>
-          <div class="col">
-            <button id="searchBtn" type="button" class="btn btn-primary btn-block">Search</button>
-          </div>
-        </div>
-      </div>
+
+  <!-- Búsqueda -->
+  <div class="container mt-4" id="search">
+    <form class="form-inline mb-3">
+      <input id="titleFld" type="text" class="form-control geek-input rounded-corners col-sm-9" placeholder="Find your movie...">
+      <button id="searchBtn" type="button" class="form-control btn btn-geek rounded-corners mt-3 mt-sm-0 col-sm-2 offset-sm-1">Search</button>
+    </form>
+    <div class="row">
       <div id="movieList"></div>
-      <div class="container">
+      <!-- Flecha para subir al primer item -->
+      <div class="container my-3">
         <div class="row">
           <div class="col">
-            <a href="#search" class="btn-up pull-right"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+            <a href="#search" class="btn-up pull-right">
+              <i class="fa fa-angle-up" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -106,9 +110,15 @@
   <footer>
     <div class="container">
       <div class="row text-center">
-        <div class="col col-lg-2 offset-lg-3"><a href="#">Home</a></div>
-        <div class="col col-lg-2"><a href="#">Search</a></div>
-        <div class="col col-lg-2"><a href="#">Profile</a></div>
+        <div class="col col-lg-2 offset-lg-3">
+          <a href="#">Home</a>
+        </div>
+        <div class="col col-lg-2">
+          <a href="#">Search</a>
+        </div>
+        <div class="col col-lg-2">
+          <a href="#">Profile</a>
+        </div>
       </div>
       <div class="row">
         <div class="col text-center">
@@ -118,13 +128,15 @@
     </div>
   </footer>
 
-
-
- <!-- jQuery -->
- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
- <!-- Bootstrap -->
- <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
- <!-- Scripts del proyecto -->
- <script src="../js/search.js"></script>
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Scripts del proyecto -->
+  <script src="../js/app.js"></script>
+  <script src="../js/search.js"></script>
 </body>
+
 </html>

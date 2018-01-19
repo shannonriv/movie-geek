@@ -85,8 +85,7 @@ $(document).ready(function() {
 
     // Auth Firebase para crear usuario con email
     firebase.auth().createUserWithEmailAndPassword($email, $password)
-      .then(function() {
-        var user = firebase.auth().currentUser();
+      .then(function(user) {
         var username = $regName.val() + ' ' + $regLastname.val();    
         return user.updateProfile({
           displayName: username,
