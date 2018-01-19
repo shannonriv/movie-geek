@@ -1,6 +1,6 @@
 # Hackhathon Challenge: Movie Geek
 
-**Movie Geek** es una web app que te permite obtener información acerca de películas del genero ciencia ficcion y ademas de ello te permite valorar y ver criterios específicos tales como: guión, cinematografía y soundtrack. Teniendo en cuenta que nuestro usuario es muy meticuloso para buscar información.
+**Movie Geek** es una web app que te permite obtener información acerca de películas del genero ciencia ficción, ademas de poder agregar a tus listas las películas que quieres ver en el futuro y aquellas que ya viste.
 
 ***
 
@@ -103,8 +103,12 @@ Unificar estilos -> Shannon
 
 ### Resultado:
 
-![Sin titulo](assets/docs/vista-1.png)
+![Sin titulo](assets/docs/vista-login.png)
 
-![Sin titulo](assets/docs/vista-2.png)
+![Sin titulo](assets/docs/vista-register.png)
 
-![Sin titulo](assets/docs/vista-4.PNG)
+![Sin titulo](assets/docs/vista-search.png)
+
+![Sin titulo](assets/docs/vista-movie-info.png)
+
+![Sin titulo](assets/docs/vista-profile.png)
