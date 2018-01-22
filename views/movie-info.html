@@ -83,10 +83,11 @@
               <i class="fa fa-check" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Add to History!"
                 id="btn-history"></i>
             </button>
-              <button type="button" class="btn btn-thumb-up">
-                <i onclick="likeToggle(this)" class="fa fa-thumbs-o-up" aria-hidden="true" data-toggle="tooltip" data-placement="bottom"
-                  title="Like or dislike!" id="thumb-up"></i>
+              <button type="button" class="btn btn-thumb-up" id="thumb-up">
+                <i class="fa fa-thumbs-o-up" aria-hidden="true" data-toggle="tooltip" data-placement="bottom"
+                  title="Like or dislike!"  onclick="myFunction(this)"></i>
               </button>
+              <!-- <a href="#" class="btn btn-thumb-up"><i onclick="likeToggle(this)" class="fa fa-thumbs-o-up" aria-hidden="true" id="thumb-up"></i></a> -->
           </div>
         </div>
       </div>
@@ -142,6 +143,11 @@
   </script>
   <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.bundle.min.js">
 
+  </script>
+  <script type="text/javascript">
+    function myFunction(x) {
+      x.classList.toggle("fa-thumbs-down");
+    }
   </script>
 </body>
 
