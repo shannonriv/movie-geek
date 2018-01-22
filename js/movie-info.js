@@ -9,14 +9,14 @@ function begin() {
 function watchlist() {
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-      const key = firebase.database().ref().push().key;      
+      const key = firebase.database().ref().push().key;
       firebase.database().ref('watchlist/' + user.uid).push({
         movie: localStorage.selectedMovieID,
         key: key
-      }); 
+      });
       console.log('added movie.');
     } else {
-      console.log('failed.');   
+      console.log('failed.');
     }
   });
 }
@@ -55,10 +55,6 @@ function likeRating() {
   $(likeBtn).on('click', function() {
     likeBtn.addClass('hand-color');
   });
-}
-
-function likeToggle(x) {
-  x.classList.toggle('fa-thumbs-down');
 }
 
 // function dislikeRating() {

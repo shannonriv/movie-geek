@@ -166,9 +166,6 @@ function begin() {
   }
 
   /* FUNCIÓN PARA IMPRIMIR CAJAS ENVOLVENTES CON INFORMACIÓN DE PELÍCULA */
-  function dfg() {
-
-  }
 }
 
 $(document).ready(begin);
