@@ -1,8 +1,18 @@
+# Movie Geek
+
+Movie Geek es una página web y aplicación móvil diseñada para el público geek con el fin de visualizar y guardar información de películas del género ciencia ficción, fantasía y superheroes.
+
+![movie-geek-vista-previa](https://user-images.githubusercontent.com/32301245/38390754-da3cb538-38e7-11e8-9a9f-1f0ccd9de6e6.png)
+
+### Desarrollado para
+
+* [Laboratoria](http://talento.laboratoria.la/)
+
+***
+
 # Hackathon Challenge: Movie Geek
 
 **Movie Geek** es una web app que te permite obtener información acerca de películas del genero ciencia ficción, ademas de poder agregar a tus listas las películas que quieres ver en el futuro y aquellas que ya viste.
-
-***
 
 ### Desarrollo del producto
 
